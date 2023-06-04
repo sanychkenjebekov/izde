@@ -1,0 +1,98 @@
+#home{
+  font-family: 'Poppins',sans-serif;
+  padding: 60px 0;
+  .home{
+    background: url("../../img/home.png") no-repeat center;
+    border-radius: 20px;
+    h1{
+      text-align: center;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 76px;
+      color: #FFFFFF;
+      padding: 100px 0 150px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //width: 1040px;
+    width: 90%;
+    height: 136px;
+    margin: -75px auto 0;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 74, 96, 0.5);
+    border-radius: 32px;
+    padding: 0 20px;
+    z-index: 1;
+    &--sel{
+      &__btn{
+        button{
+          font-size: 16px;
+          line-height: 24px;
+          color: rgba(0, 74, 96, 0.7);
+          background: none;
+          border: 1px solid rgba(0, 74, 96, 0.5);
+          border-radius: 8px;
+          padding: 5px 15px;
+          margin: 0 10px 0 0;
+          transition: .3s;
+        }
+      }
+      &__option{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        gap: 10px;
+        select{
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: rgba(0, 74, 96, 0.7);
+          border: 1px solid rgba(0, 74, 96, 0.5);
+          border-radius: 8px;
+          padding: 8px 15px;
+        }
+      }
+    }
+    &--inp{
+      display: flex;
+      align-items: center;
+      input{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(0, 74, 96, 0.5);
+        padding: 30px 410px 30px 20px;
+        background: rgba(0, 74, 96, 0.1);
+        border-radius: 16px;
+        border: none;
+      }
+      button{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        background: #1B76F9;
+        border-radius: 8px;
+        padding: 13px 20px;
+        margin: 0 0 0 490px;
+        transition: .3s;
+        &:hover{
+          background: #005cdf;
+        }
+        .searchIcon{
+          font-size: 23px;
+          margin: 0 5px 0 0;
+        }
+      }
+    }
+  }
+}

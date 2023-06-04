@@ -1,0 +1,257 @@
+@media (max-width: 1140px) {
+  .container{
+    width: 90%;
+  }
+  #home .filter--inp input {
+    padding: 30px 215px 30px 20px;
+  }
+  #home .filter--inp button{
+    margin: 0 0 0 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #home .filter--inp input {
+    padding: 30px 190px 30px 20px;
+  }
+  #home .filter--inp button {
+    margin: 0 0 0 275px;
+  }
+}
+
+@media (max-width: 992px) {
+  #home .filter {
+    margin: -100px auto 0;
+  }
+  #home .filter--inp button{
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+  #home .filter--inp input {
+    padding: 20px 190px 20px 20px;
+  }
+  #home .filter{
+    flex-direction: column-reverse;
+    gap: 15px;
+    height: 215px;
+    padding: 20px;
+  }
+  #home .filter--sel__option{
+    flex-wrap: wrap;
+    width: 267px;
+    .rooms{
+      padding: 8px 29px;
+    }
+    .price{
+      padding: 8px 29px;
+    }
+  }
+  #home .filter--sel__btn button {
+    padding: 5px 50px;
+    font-size: 14px;
+  }
+  #home .filter--sel__option select{
+    padding: 8px 76px;
+    font-size: 14px;
+  }
+  #easy .easy--cardAll {
+    flex-direction: column;
+    gap: 50px;
+  }
+  #easy .easy--cardAll__card {
+    width: 340px;
+    height: 330px;
+    img{
+      width: 340px;
+      height: 180px;
+    }
+  }
+  #explore .explore--about {
+    flex-direction: column;
+    gap: 40px;
+  }
+  #explore .explore--about__btn {
+    gap: 390px;
+  }
+  #exploreSwip .exploreSwip--card h3{
+    font-size: 18px;
+  }
+  #exploreSwip .exploreSwip--card__price p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  #explore .explore--about__btn {
+    gap: 255px;
+  }
+
+}
+
+@media (max-width: 640px) {
+  #home .filter{
+    width: 85%;
+  }
+  #home .filter--inp input {
+    padding: 20px 175px 20px 20px;
+  }
+  #home .filter--inp button {
+    margin: 0 0 0 265px;
+  }
+  #meet .meet--about h1 {
+    font-size: 25px;
+  }
+  #home .home h1 {
+    line-height: 60px;
+    padding: 86px 0 150px 0;
+  }
+  #home .home{
+    background: url("../../img/home2.png");
+  }
+  #meet .meet--about {
+    flex-direction: column;
+    align-items: end;
+    gap: 30px;
+  }
+  #easy .easy--cardAll__card h5 {
+    font-size: 11px;
+    padding: 2px 7px;
+  }
+  #home .home h1{
+    font-size: 36px;
+  }
+  #explore .explore--about__btn {
+    gap: 190px;
+  }
+  #exploreSwip .exploreSwip--card img {
+    width: 210px;
+    height: 210px;
+    border-radius: 8px;
+  }
+  #exploreSwip .exploreSwip--card h3 {
+    font-size: 16px;
+  }
+  #exploreSwip .exploreSwip--card__price span {
+    font-size: 14px;
+  }
+  #easy .easy h1{
+    font-size: 25px;
+  }
+  #easy .easy .p{
+    font-size: 14px;
+  }
+  #explore .explore--about h1 {
+    font-size: 25px;
+  }
+  #explore .explore--about__btn select {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  #explore .explore--about__btn button {
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 540px) {
+  #explore .explore--about__btn {
+    gap: 155px;
+  }
+}
+
+@media (max-width: 480px) {
+  #home .filter--inp input {
+    font-size: 14px;
+  }
+  #home .home h1 {
+    font-size: 32px;
+  }
+  #home .filter--inp input {
+    padding: 20px 140px 20px 20px;
+  }
+  #home .filter--inp button {
+    margin: 0 0 0 210px;
+  }
+  #explore .explore--about__btn {
+    gap: 129px;
+  }
+  #meet .meet--list h2 {
+    font-size: 24px;
+  }
+  #meet .meet--list p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  #home .filter--sel__btn button{
+    margin: 0 9px 0 0;
+  }
+  #home .filter--inp input {
+    padding: 20px 115px 20px 20px;
+  }
+  #home .filter--inp button {
+    margin: 0 0 0 190px;
+  }
+  #home .filter--inp button {
+    font-size: 14px;
+  }
+  #home .filter--inp button .searchIcon {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  #meet .meet--list h2 {
+    font-size: 18px;
+  }
+  #meet .meet--list p {
+    font-size: 13px;
+  }
+  #meet .meet--list button{
+    font-size: 14px;
+  }
+  #easy .easy--cardAll__card {
+    width: 290px;
+    height: 342px;
+  }
+  #easy .easy--cardAll__card img {
+    width: 290px;
+  }
+  #easy .easy--cardAll__card--title p {
+    width: 241px;
+  }
+  #home .home h1 {
+    line-height: 50px;
+    font-size: 28px;
+  }
+  #home .filter {
+    height: 210px;
+  }
+  #home .filter--inp input {
+    padding: 20px 85px 20px 20px;
+    font-size: 13px;
+  }
+  #home .filter--inp button {
+    margin: 0 0 0 168px;
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+  #home .filter--sel__btn button{
+    margin: 0;
+  }
+  #home .buy{
+    margin-left: 10px !important;
+  }
+  #explore .explore--about__btn {
+    gap: 80px;
+  }
+  #explore .explore--about__btn select {
+    font-size: 13px;
+    padding: 10px 5px;
+  }
+  #explore .explore--about__btn button {
+    font-size: 13px;
+    padding: 9px 10px;
+  }
+}

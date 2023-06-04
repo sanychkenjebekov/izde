@@ -1,0 +1,99 @@
+#meet{
+  font-family: 'Poppins',sans-serif;
+  padding: 70px 0;
+  .meet{
+    &--about{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 0 50px 0;
+      h1{
+        font-weight: 600;
+        font-size: 28.43px;
+        line-height: 43px;
+        color: #004A60;
+      }
+      button{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1B76F9;
+        background: rgba(27, 118, 249, 0.3);
+        border-radius: 8px;
+        padding: 10px 15px;
+        transition: .3s;
+        &:hover{
+          background: #1B76F9;
+          color: #FFFFFF;
+        }
+      }
+    }
+    &--cardAll{
+      display: flex;
+      align-items: center;
+      gap: 70px;
+      overflow-x: scroll;
+      &::-webkit-scrollbar{
+        height: 0;
+        background: rgba(0, 74, 96, 0.5);
+      }
+      &::-webkit-scrollbar-thumb{
+        background: rgba(0, 74, 96, 0.8);
+      }
+      &__card{
+        display: flex;
+        margin: 0 0 30px 0;
+        img{
+          width: 120px;
+          height: 120px;
+          //border: 3px solid #1B76F9;
+          border-radius: 50%;
+        }
+        svg{
+          margin: 0 0 0 -30px;
+        }
+      }
+    }
+    &--list{
+      background: #1B76F9;
+      border-radius: 32px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      margin: 70px auto 0;
+      //padding: 50px 0;
+      height: 300px;
+      h2{
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 43px;
+      }
+      p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        padding: 15px 0 25px 0;
+      }
+      button{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1B76F9;
+        background: #FFFFFF;
+        border-radius: 8px;
+        padding: 12px 25px;
+        transition: .3s;
+        border: 1px solid white;
+        &:hover{
+          background: #1B76F9;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}

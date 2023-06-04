@@ -1,0 +1,105 @@
+@media (max-width: 1140px) {
+  #favoriteSetings .favoriteSetings--profile {
+    width: 630px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #favoriteSetings .favoriteSetings--profile {
+    width: 600px;
+  }
+}
+
+@media (max-width: 992px) {
+  #favoriteSetings .favoriteSetings {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  #favoriteSetings .favoriteSetings--profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 820px) {
+
+}
+
+@media (max-width: 768px) {
+  #favoriteSetings .saved--cardAll {
+    width: 565px;
+  }
+}
+
+@media (max-width: 640px) {
+  #favoriteSetings .favoriteSetings--profile h3{
+    font-size: 18px;
+  }
+  #favoriteSetings .favoriteSetings--profile h1 {
+    font-size: 27px;
+  }
+  #favoriteSetings .favoriteSetings--profile {
+    width: 95%;
+  }
+  #favoriteSetings .saved--cardAll {
+    width: 280px;
+    height: 460px;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 5px;
+  }
+  #favoriteSetings .saved {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  #favoriteSetings .saved--cardAll__card {
+    margin-top: 10px;
+  }
+  #favoriteSetings .favoriteSetings--tel button {
+    font-size: 15px;
+    width: 190px;
+    height: 54px;
+  }
+}
+
+@media (max-width: 540px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 420px) {
+  #favoriteSetings .favoriteSetings--profile h3 {
+    font-size: 17px;
+  }
+  #favoriteSetings .favoriteSetings--profile h1 {
+    font-size: 24px;
+  }
+  #favoriteSetings .favoriteSetings--profile p {
+    font-size: 14px;
+  }
+  #favoriteSetings .saved--cardAll__card p {
+    font-size: 14px;
+  }
+  #favoriteSetings .saved--cardAll__card h2 {
+    font-size: 19px;
+  }
+  #favoriteSetings .saved--cardAll__card--filter span {
+    font-size: 14px;
+  }
+  #favoriteSetings .saved--cardAll__card--price .price {
+    font-size: 14px;
+  }
+}
+@media (max-width: 360px) {
+
+}
+
+@media (max-width: 320px) {
+
+}

@@ -1,0 +1,183 @@
+#agent{
+  #agents {
+    background-image: url('../../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 368px;
+    // position: relative;
+    .agents {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        font-weight: 600;
+        font-size: 50.52px;
+        text-align: center;
+        width: 500px;
+        color: #FFFFFF;
+        padding-top: 59px;
+      }
+      &__block {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+        width: 710px;
+        height: 200px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 74, 96, 0.5);
+        border-radius: 32px;
+        .section{
+          display: none;
+        }
+        .section2{
+          display: none;
+        }
+        &--search {
+          position: relative;
+
+          display: grid;
+          grid-template-columns: auto 1fr;
+          align-items: center;
+          &-icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // position: absolute;
+            // top: 45px;
+            // right: 16px;
+            button{
+              display: flex;
+              gap: 5px;
+              align-items: center;
+              justify-content: center;
+              position: absolute;
+              right: 30px;
+              color: #FFFFFF;
+              background: #1B76F9;
+              border-radius: 8px;
+              padding: 16px 0;
+              width: 121px;
+              border: none;
+              outline: none;
+              transition: 0.2s;
+              &:hover{
+                background: #005cdf;
+              }
+
+              .icon{
+                font-size: 23px;
+
+              }
+            }
+          }
+
+          input {
+            background: rgba(0, 74, 96, 0.1);
+            border-radius: 16px;
+            margin: 24px auto;
+            border: none;
+            outline: none;
+            padding-left: 30px;
+            width: 660px;
+            height: 88px;
+            color: rgba(0, 74, 96, 0.5);
+            font-size: 16px;
+          }
+          input::placeholder{
+            font-weight: 400;
+            font-size: 16px;
+            color: rgba(0, 74, 96, 0.5);
+          }
+          .none{
+            display: none;
+          }
+        }
+        select{
+          padding: 8px 8px 8px 16px;
+          gap: 8px;
+          width: 137px;
+          height: 40px;
+          background: #FFFFFF;
+          border-radius: 8px;
+          border: 1.5px solid rgba(0, 74, 96, 0.7);
+          outline: none;
+          color: rgba(0, 74, 96, 0.7);
+        }
+
+      }
+    }
+  }
+  #hero{
+    .hero{
+      padding-top: 161px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 32px;
+      justify-content: center;
+      align-items: center;
+      width: 258px;
+      margin: 0 auto;
+      &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid rgba(0, 74, 96, 0.7);
+        border-radius: 35px;
+        &:hover{
+          background: rgba(0, 74, 96, 0.1);
+        }
+        img{
+          border-radius: 35px 35px 0 0;
+          width: 256px;
+          height: 256px;
+
+        }
+        h1{
+          padding: 16px 0;
+          font-weight: 500;
+          font-size: 21.33px;
+          color: #004A60;
+        }
+        span{
+          font-weight: 400;
+          font-size: 12.8px;
+          text-align: center;
+          color: #004A60;
+          padding-bottom: 16px;
+        }
+        button{
+          background: #1B76F9;
+          border-radius: 16px;
+          padding: 8px 0;
+          color: #FFFFFF;
+          width: 137px;
+          border: none;
+          outline: none;
+          margin-bottom: 35px;
+        }
+      }
+    }
+    .button{
+      display: flex;
+      justify-content: center;
+      button{
+        font-size: 16px;
+        padding: 10px 16px;
+        margin: 86px 0;
+        background: rgba(27, 118, 249, 0.3);
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        color: #1B76F9;
+        transition: .3s;
+        &:hover{
+          color: #FFFFFF;
+          background: #0762E5;
+        }
+      }
+    }
+  }
+}

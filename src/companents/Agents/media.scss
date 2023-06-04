@@ -1,0 +1,268 @@
+@media (max-width: 1140px) {
+  .container{
+    width: 90%;
+  }
+}
+
+@media (max-width: 1160px) {
+  #agent{
+    #hero {
+      .hero {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 992px) {}
+@media (max-width: 890px) {
+  #agent{
+    #hero {
+      .hero {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  #agent{
+    #agents{
+      .agents{
+        h1{
+          font-size: 40.52px;
+        }
+        &__block{
+          width: 610px;
+          height: 200px;
+          &--search{
+            input{
+              width: 560px;
+              height: 88px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  #agent{
+    #agents{
+      .agents{
+        h1{
+          font-size: 40.52px;
+        }
+        &__block{
+          width: 510px;
+          height: 200px;
+          &--search{
+            input{
+              width: 460px;
+              height: 88px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 540px) {
+  #agent{
+    #agents{
+      .agents{
+        h1{
+          font-size: 30.52px;
+          width: 480px;
+        }
+        &__block{
+          width: 410px;
+          height: 230px;
+          .section{
+            display: flex;
+            gap: 15px;
+            padding: 10px 4px;
+
+            .sec{
+              width: 167px;
+            }
+          }
+          .section0{
+            display: none;
+          }
+          .section2{
+            display: flex;
+            width: 348px;
+          }
+          &--search{
+            display: flex;
+            // position: relative;
+            &-icon{
+              // position: absolute;
+              // top: 33px;
+              // right: 16px;
+            }
+            .icon{
+              // position: absolute;
+              // top: 6px;
+              // left: 12px;
+              // width: 18px;
+              // height: 28px;
+            }
+            input{
+              display: none;
+              width: 320px;
+              height: 58px;
+            }
+            .none{
+              display: block;
+            }
+            button{
+              width: 97px;
+              text-align: right;
+              right: 15px;
+              padding: 10px 16px;
+            }
+          }
+        }
+      }
+    }
+    #hero {
+      .hero {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+
+}
+@media (max-width: 480px) {
+  #agent{
+    #agents{
+      .agents{
+        h1{
+          font-size: 24.52px;
+          width: 350px;
+        }
+        &__block{
+          width: 390px;
+          height: 230px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 420px) {
+  #agent{
+    #agents{
+      .agents{
+        h1{
+          font-size: 24.52px;
+        }
+        &__block{
+          width: 380px;
+          height: 230px;
+          .section{
+            display: flex;
+            gap: 15px;
+            padding: 10px 2px;
+
+            .sec{
+              width: 152px;
+            }
+          }
+          .section2{
+            display: flex;
+            width: 318px;
+          }
+          &--search{
+            input{
+              display: none;
+              width: 290px;
+              height: 58px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 380px) {
+  #agent{
+    #agents{
+      .agents{
+        h1{
+          font-size: 24.52px;
+        }
+        &__block{
+          width: 340px;
+          height: 230px;
+          .section{
+            display: flex;
+            gap: 15px;
+            padding: 10px 4px;
+
+            .sec{
+              width: 127px;
+            }
+          }
+          .section2{
+            display: flex;
+            width: 270px;
+          }
+          &--search{
+            input{
+              display: none;
+              width: 270px;
+              height: 58px;
+            }
+            input::placeholder{
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #agent{
+    #agents{
+      .agents{
+        h1{
+          font-size: 24.52px;
+        }
+        &__block{
+          width: 290px;
+          height: 230px;
+          .section{
+            display: flex;
+            gap: 15px;
+            padding: 10px 4px;
+          }
+          &--search{
+            input{
+              display: none;
+              width: 245px;
+              height: 58px;
+            }
+            input::placeholder{
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #agent #agents .agents__block--search button {
+    right: 7px;
+  }
+  #agent #agents .agents h1 {
+    width: 300px;
+  }
+}
+@media (max-width: 320px) {
+
+}

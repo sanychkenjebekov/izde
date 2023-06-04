@@ -1,0 +1,47 @@
+#explore{
+  padding: 50px 0;
+  font-family: 'Poppins',sans-serif;
+  .explore{
+    &--about{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 0 50px 0;
+      h1{
+        font-weight: 600;
+        font-size: 28.43px;
+        line-height: 32px;
+        color: #004A60;
+      }
+      &__btn{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        select{
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: rgba(0, 74, 96, 0.7);
+          background: #FFFFFF;
+          border: 1px solid rgba(0, 74, 96, 0.5);
+          border-radius: 8px;
+          padding: 10px 15px;
+        }
+        button{
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: #1B76F9;
+          background: rgba(27, 118, 249, 0.3);
+          border-radius: 8px;
+          padding: 10px 15px;
+          transition: .3s;
+          &:hover{
+            background: #1B76F9;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}
