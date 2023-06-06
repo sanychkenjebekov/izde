@@ -5,12 +5,16 @@ import Footer from "./companents/Footer";
 import Home from "./companents/Home";
 import Login from "./companents/Login/login";
 import Agents from "./companents/Agents/agents";
+
 import {useEffect} from "react";
 import FavoriteSetings from "./companents/FavoritesSetings";
 import PaidAd from "./companents/PaidAd";
 import Favorite from "./companents/Favorite";
 
-// aax
+import Reviews from "./companents/Reviews/reviews"
+
+
+
 function App() {
     const {pathname} = useLocation()
     useEffect(()=>{
@@ -24,8 +28,12 @@ function App() {
         <Route path={'/'} element={<Home/>}/>
         <Route path={'/login'} element={<Login/>}/>
         <Route path={'/agents'} element={<Agents/>}/>
+
         <Route path={'/favoriteSetings'} element={<FavoriteSetings/>}/>
         <Route path={'/addProperty'} element={<PaidAd/>}/>
+
+        <Route path={'/reviews'} element={<Reviews/>}/>
+
       </Routes>
       <Footer/>
     </div>
