@@ -28,6 +28,7 @@ const Login = () => {
             setFormValid(false)
         } else {
             setFormValid(true)
+
         }
     })
 
@@ -67,6 +68,10 @@ const Login = () => {
                 break;
         }
     };
+    const userBlock = ()=>{
+        setUsers(true)
+        setProfil(false)
+    }
     return (
         <div id='login'>
             <div className="container">
@@ -116,8 +121,8 @@ const Login = () => {
                             <p>We’ll call or text you to confirm your number. Standard message and data rates apply.</p>
                             <a href="">Forgot your password?</a>
                             <a href="">Don’t have an account? Register</a>
-                            <Link to='/'>
-                                <button disabled={!formValid} type='submit'>
+                            <Link to='/favoriteSetings'>
+                                <button onClick={userBlock} disabled={!formValid} type='submit'>
                                     Continue
                                 </button>
                             </Link>
