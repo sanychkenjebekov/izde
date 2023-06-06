@@ -11,6 +11,9 @@ import PaidAd from "./companents/PaidAd";
 import Favorite from "./companents/Favorite";
 
 
+import Reviews from "./companents/Reviews/reviews"
+
+
 function App() {
     const {pathname} = useLocation()
     useEffect(()=>{
@@ -24,8 +27,12 @@ function App() {
         <Route path={'/'} element={<Home/>}/>
         <Route path={'/login'} element={<Login/>}/>
         <Route path={'/agents'} element={<Agents/>}/>
+
         <Route path={'/favoriteSetings'} element={<FavoriteSetings/>}/>
         <Route path={'/addProperty'} element={<PaidAd/>}/>
+
+        <Route path={'/reviews'} element={<Reviews/>}/>
+
       </Routes>
       <Footer/>
     </div>
