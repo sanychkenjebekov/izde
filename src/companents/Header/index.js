@@ -61,7 +61,7 @@ const Header = () => {
         }else {
             hLogin.style.display = 'none'
         }
-    },[])
+    },[users,profil])
     return (
         <div id='header'>
             <div className="container">
@@ -82,7 +82,7 @@ const Header = () => {
                             <option>Русский</option>
                         </select>
                         <Link onClick={removeBurger} to={'/login'}><button className='headerLogin'>Log in</button></Link>
-                        <img className='headerUser' src={user} alt=""/>
+                        <Link to={'/favoriteSetings'}><img className='headerUser' src={user} alt=""/></Link>
                     </div>
                     <div onClick={burger} className="header--burgerAll">
                         <div className="header--burgerAll__burger">
@@ -108,7 +108,7 @@ const Header = () => {
                         <option>Русский</option>
                     </select>
                     <Link onClick={removeBurger} to={'/login'}><button className='burgerLogin'>Log in</button></Link>
-                    <img className='burgerUser' src={user} alt=""/>
+                    <Link to={'/favoriteSetings'}><img className='burgerUser' src={user} alt=""/></Link>
                 </div>
             </div>
             <div className="bg"></div>

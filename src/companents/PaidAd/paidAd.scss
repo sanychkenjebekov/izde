@@ -1,0 +1,32 @@
+#paidAd{
+  background: url("../../img/paidHome.png") no-repeat center/cover;
+  font-family: 'Poppins',sans-serif;
+  .paidAd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+      width: 380px;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 75px;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 100px 0 125px 0;
+    }
+    button{
+      position: absolute;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      color: #FFFFFF;
+      width: 330px;
+      height: 54px;
+      background: #1B76F9;
+      border: 1px solid #0762E5;
+      border-radius: 11px;
+      margin-top: 370px;
+    }
+  }
+}
