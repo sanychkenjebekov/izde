@@ -10,7 +10,7 @@ import FavoriteSetings from "./companents/FavoritesSetings";
 import PaidAd from "./companents/PaidAd";
 import Favorite from "./companents/Favorite";
 
-
+// aax
 function App() {
     const {pathname} = useLocation()
     useEffect(()=>{
