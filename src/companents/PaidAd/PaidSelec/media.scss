@@ -1,0 +1,119 @@
+@media (max-width: 1140px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 992px) {
+  #paidSel .paidSel--paidSelAll {
+    flex-direction: column;
+    align-items: center;
+  }
+  #paidSel .paidSel--paidSelAll__type--btn {
+    flex-wrap: wrap;
+    width: 273px;
+    gap: 15px;
+  }
+  #paidSel .paidSel--paidSelAll__type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #paidSel .paidSel--paidSelAll__sale--btn {
+    gap: 15px;
+  }
+  #paidAd .paidAd h1 {
+    font-size: 36px;
+  }
+  #paidAd .paidAd button {
+    font-size: 18px;
+  }
+  #paidSel .paidSel .btnCenter {
+    font-size: 18px;
+    padding: 10px 100px;
+  }
+  #paidSel .paidSel--paidSelAll{
+    border: none;
+  }
+  #paidSel .paidSel {
+    border: 1px solid #AFC6CD;
+    border-radius: 32px;
+    width: 374px;
+    height: 450px; margin: 100px auto 0;
+  }
+  #paidSel .paidSel--paidSelAll{
+    margin: 0;
+    gap: 45px;
+  }
+}
+
+@media (max-width: 820px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 640px) {
+
+}
+
+@media (max-width: 540px) {
+
+}
+
+@media (max-width: 480px) {
+  #paidAd .paidAd h1 {
+    font-size: 26px;
+    width: 224px;
+    line-height: 44px;
+  }
+  #paidAd .paidAd button {
+    width: 270px;
+    height: 50px;
+    font-size: 17px;
+    margin-top: 310px;
+  }
+  #paidSel .paidSel .btnCenter {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 420px) {
+  #paidSel .paidSel{
+    width: 95%;
+  }
+  #paidSel .paidSel--paidSelAll {
+    padding: 30px 0;
+  }
+  #paidSel .paidSel .btnCenter {
+    padding: 8px 95px;
+  }
+}
+
+@media (max-width: 360px) {
+  #paidSel .paidSel {
+    width: 100%;
+  }
+  #paidSel .paidSel--paidSelAll__sale--btn button {
+    font-size: 15px;
+  }
+  #paidSel .paidSel--paidSelAll__type--btn button {
+    font-size: 15px;
+  }
+  #paidAd .paidAd button {
+    width: 230px;
+    font-size: 16px;
+  }
+  #paidSel .paidSel .btnCenter {
+    padding: 8px 80px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+
+}
