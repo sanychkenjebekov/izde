@@ -16,6 +16,7 @@ import PaidAd from "./companents/PaidAd";
 import Favorite from "./companents/Favorite";
 
 import Reviews from "./companents/Reviews/reviews"
+import Swip from "./companents/Buy/detailebuy/swip";
 
 
 
@@ -27,18 +28,19 @@ function App() {
   return (
     <div className="App">
       <Header/>
-        {/*<Dream/>*/}
-        {/*<Wifi/>*/}
-        <Favorite/>
+
+        {/*<Favorite/>*/}
       <Routes>
-        <Route path={'/'} element={<Home/>}/>
-        <Route path={'/login'} element={<Login/>}/>
-        <Route path={'/agents'} element={<Agents/>}/>
+          <Route path={'/'} element={<Home/>}/>
+          <Route path={'/login'} element={<Login/>}/>
+          <Route path={'/agents'} element={<Agents/>}/>
           <Route path={'/buy'} element={<Buy/>}/>
           <Route path={'/rent'} element={<Rent/>}/>
+          <Route path={'/dream'} element={<Dream/>}/>
 
 
-        <Route path={'/favoriteSetings'} element={<FavoriteSetings/>}/>
+
+          <Route path={'/favoriteSetings'} element={<FavoriteSetings/>}/>
         <Route path={'/addProperty'} element={<PaidAd/>}/>
 
         <Route path={'/reviews'} element={<Reviews/>}/>

@@ -8,6 +8,7 @@ import "./media.scss"
 import svg from "../../img/svg.svg"
 import {FaBath, FaVectorSquare} from "react-icons/fa";
 import {BiBed} from "react-icons/bi";
+import {Link} from "react-router-dom";
 
 const Buy = () => {
     return (
@@ -53,28 +54,30 @@ const Buy = () => {
                     </div>
                     <div className='buy--more'>
                         <div>
-                            <div className='buy--more__card'>
-                                <div className='buy--more__card--into'>
-                                    <div className='buy--more__card--into__flat'>
-                                        <img className='buy--more__card--into__flat--img' src={flat} alt=""/>
-                                    </div>
-                                    <div className='buy--more__card--into__right'>
-                                        <div className='buy--more__card--into__right--one'>
-                                            <h2>Apartment</h2>
-                                            <h3>The Grand Estate</h3>
+                            <Link to={`/dream`}>
+                                <div className='buy--more__card'>
+                                    <div className='buy--more__card--into'>
+                                        <div className='buy--more__card--into__flat'>
+                                            <img className='buy--more__card--into__flat--img' src={flat} alt=""/>
                                         </div>
-                                        <div className='buy--more__card--into__right--two'>
-                                            <span> <FaBath/> 1 Bathroom <br/> <BiBed/> 1 Bedroom</span>
-                                            <span> <FaVectorSquare/> Square: 120 m2</span>
-                                        </div>
+                                        <div className='buy--more__card--into__right'>
+                                            <div className='buy--more__card--into__right--one'>
+                                                <h2>Apartment</h2>
+                                                <h3>The Grand Estate</h3>
+                                            </div>
+                                            <div className='buy--more__card--into__right--two'>
+                                                <span> <FaBath/> 1 Bathroom <br/> <BiBed/> 1 Bedroom</span>
+                                                <span> <FaVectorSquare/> Square: 120 m2</span>
+                                            </div>
 
-                                        <div className='buy--more__card--into__right--three'>
-                                            <h4>Bishkek</h4>
-                                            <span>$ 100 000</span>
+                                            <div className='buy--more__card--into__right--three'>
+                                                <h4>Bishkek</h4>
+                                                <span>$ 100 000</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                             <div className='buy--more__card'>
                                 <div className='buy--more__card--into'>
                                     <div className='buy--more__card--into__flat'>
