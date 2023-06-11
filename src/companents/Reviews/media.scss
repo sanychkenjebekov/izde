@@ -1,0 +1,716 @@
+@media (max-width: 1140px) {
+  .container {
+    width: 90%;
+  }
+  #review {
+    #global {
+      margin-left: -28px;
+    }
+  }
+  #review #global .container .top--grand .layout .all--line {
+    width: 572px;
+  }
+  #review #global .container .top--grand .layout .all--line .estate .apartment .apartments--title {
+    padding: 0 220px 0 0;
+  }
+  #review #global .container .top--grand .layout .all--line .estate .apartment .err .feedbacks .feedback--lin {
+    margin-left: -15px;
+  }
+  #review #global .container .top--grand .layout .recent .latest .line {
+    width: 380px;
+  }
+  #review #reviews .container .building--bl {
+    margin: 90px auto 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  #review {
+    #global {
+      margin-left: -44px;
+
+      .container {
+        .top {
+          &--grand {
+            .layout {
+              //.all {
+              //  &--line {
+              //    width: 613px;
+              //  }
+              //}
+
+              .recent {
+                .latest {
+                  .line {
+                    width: 356px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+
+  #review {
+    #reviews {
+      .container {
+        .building {
+          &--bl {
+            width: 629px;
+            height: 123px;
+
+            &__search {
+              input {
+                width: 603px;
+                height: 84px;
+                margin: 18px 0 5px 14px;
+              }
+
+              &--icon {
+                button {
+                  margin: -99px -250px 1px 180px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #global {
+      .container {
+        .top {
+          &--grand {
+            &__h {
+             text-align: center;
+            }
+
+            .layout {
+              flex-direction: column;
+              align-items: center;
+
+              .all {
+                &--line {
+                  .estate {
+                    .apartment {
+                      .apartments {
+                        &--title {
+
+                        }
+                      }
+
+                      .err {
+                        .feedbacks {
+
+                        }
+                      }
+                    }
+
+                    &--image {
+
+                    }
+                  }
+                }
+              }
+
+              .recent {
+                .latest {
+                  &--h {
+                    margin-top: 50px;
+                  }
+
+                  .line {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  #review {
+    #reviews {
+      .container {
+        .building {
+          &--bl {
+            width: 629px;
+            height: 123px;
+
+            &__search {
+              input {
+                width: 603px;
+                height: 84px;
+                margin: 18px 0 5px 14px;
+              }
+
+              &--icon {
+                button {
+                  margin: -99px -250px 1px 180px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #global {
+      .container {
+        .top {
+          &--grand {
+            &__h {
+              margin-left: 99px;
+            }
+
+            .layout {
+              flex-direction: column;
+              align-items: center;
+
+              .all {
+                &--line {
+                  .estate {
+                    .apartment {
+                      .apartments {
+                        &--title {
+
+                        }
+                      }
+
+                      .err {
+                        .feedbacks {
+
+                        }
+                      }
+                    }
+
+                    &--image {
+
+                    }
+                  }
+                }
+              }
+
+              .recent {
+                .latest {
+                  &--h {
+                    margin-top: 50px;
+                  }
+
+                  .line {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  #review {
+    #reviews {
+      .container {
+        .building {
+          h2 {
+            font-size: 42.52px;
+          }
+
+          &--bl {
+            width: 580px;
+            height: 102px;
+
+
+        &__search {
+          &--icon {
+            button {
+              margin: -88px -250px 1px 170px;
+            }
+          }
+
+          input {
+            width: 560px;
+            height: 76px;
+            margin: 13px 0 5px 10px;
+          }
+        }
+      }
+    }
+  }
+}
+}
+
+
+}
+
+@media (max-width: 640px) {
+#review {
+#reviews {
+  .container {
+    .building {
+      &--bl {
+        width: 501px;
+        height: 89px;
+        border-radius: 25px;
+      }
+    }
+  }
+}
+}
+
+  #review {
+    #reviews {
+      .container {
+        .building {
+          h2 {
+            font-size: 38.52px;
+          }
+
+          &--bl {
+            width: 429px;
+            height: 81px;
+            border-radius: 13px;
+            margin: 115px auto 0;
+            &__search {
+              input {
+                width: 404px;
+                height: 59px;
+              }
+
+              &--icon {
+                button {
+                  margin: -67px -190px 1px 74px;
+                  width: 100px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #global {
+      .container {
+        .top {
+          &--grand {
+            &__h {
+              font-size: 25.43px;
+            }
+
+            .layout {
+              .all {
+                &--line {
+                  width: 320px;
+                  height: 485px;
+                  margin: 40px 16px 0 29px;
+
+                  .estate {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+
+
+                    .apartment {
+                      .err {
+                        .feedbacks {
+                          margin: -1px -22px 0 2px;
+                        }
+                      }
+
+                      .apartments {
+                        padding: 4px 35px 1px 7px;
+                        margin: -69px -61px -3px -2px;
+
+                        &--text {
+                          padding: 7px 0 79px 0;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              .recent {
+                padding-left: 58px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #review #global .container .top--grand .layout .all--line .estate--image {
+    padding: 18px 0 75px 0;
+    width: 300px;
+    height: 282px;
+  }
+}
+
+@media (max-width: 548px) {
+#review {
+#reviews {
+  .container {
+    .building {
+      h2 {
+        font-size: 38.52px;
+      }
+
+      &--bl {
+        width: 429px;
+        height: 81px;
+        margin: 115px auto 0;
+        border-radius: 13px;
+
+        &__search {
+          input {
+            width: 404px;
+            height: 59px;
+          }
+
+          &--icon {
+            button {
+              margin: -67px -190px 1px 74px;
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#global {
+  .container {
+    .top {
+      &--grand {
+        &__h {
+          font-size: 25.43px;
+        }
+
+        .layout {
+          .all {
+            &--line {
+              width: 320px;
+              height: 485px;
+              margin: 40px 16px 0 29px;
+
+              .estate {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+
+
+                .apartment {
+                  .err {
+                    .feedbacks {
+                      margin: -1px -22px 0 2px;
+                    }
+                  }
+
+                  .apartments {
+                    padding: 4px 35px 1px 7px;
+                    margin: -69px -61px -3px -2px;
+
+                    &--text {
+                      padding: 7px 0 79px 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .recent {
+            padding-left: 58px;
+          }
+        }
+      }
+    }
+  }
+}
+}
+#review #global .container .top--grand .layout .all--line .estate--image {
+padding: 18px 0 75px 0;
+width: 300px;
+height: 282px;
+}
+}
+
+@media (max-width: 500px) {
+#review {
+#global {
+  margin-left: -24px;
+  padding-top: 118px;
+
+  .container {
+    .top {
+      &--grand {
+        &__h {
+          font-size: 21.43px;
+          margin-left: 0;
+        }
+
+        .layout {
+          .recent {
+            padding-left: 12px;
+
+            .latest {
+              &--h {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#reviews {
+  .container {
+    .building {
+      &--bl {
+        width: 362px;
+        height: 76px;
+
+        &__search {
+          input {
+            width: 339px;
+            height: 53px;
+          }
+
+          &--icon {
+            button {
+              margin: -64px -176px 1px 61px;
+              width: 80px;
+              height: 36px;
+              padding: 9px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}
+}
+
+@media (max-width: 450px) {
+
+}
+
+@media (max-width: 408px) {
+#review {
+#reviews {
+  .container {
+    .building {
+      h2 {
+        font-size: 33.52px;
+      }
+
+      &--bl {
+        width: 328px;
+      }
+    }
+  }
+}
+#review {
+  #global {
+    margin-left: -19px;
+    padding-top: 78px;
+    .container {
+      .top{
+        &--grand {
+          &__h {
+            font-size: 18.43px;
+            margin-left: 66px;
+          }
+          .layout{
+            .all{
+              padding: 1px;
+            }
+            .recent{
+              padding-left: 27px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+}
+  #review #reviews .container .building--bl__search input {
+    width: 313px;
+    font-size: 13px;
+  }
+  #review #reviews .container .building--bl__search--icon button {
+    margin: -64px -156px 1px 61px;
+  }
+  #review #global .container .top--grand .layout .recent .latest .line {
+    width: 270px;
+  }
+  #review #global .container .top--grand .layout .recent .latest .line {
+    justify-content: normal;
+    padding: 0 0 0 15px;
+  }
+  #review #global .container .top--grand .layout .recent .latest .line--more__text {
+    width: 254px;
+  }
+  #review #global .container .top--grand .layout .all--line .estate .apartment .err .feedbacks .feedback--lin__tx {
+    font-size: 15px;
+  }
+  #review #global .container .top--grand .layout .all--line .estate .apartment .err .feedbacks .feedback--lin {
+    width: 130px;
+  }
+  #review #global .container .top--grand .layout .all--line .estate .apartment .apartments {
+    padding: 0;
+    margin: -69px -28px -3px -2px;
+  }
+}
+
+@media (max-width: 370px) {
+#review{
+#reviews{
+.container{
+  .building{
+    &--bl{
+      width: 292px;
+      height: 73px;
+      margin: 113px 1px -4px -6px;
+      &__search{
+        input{
+          width: 291px;
+          height: 49px;
+          font-size: 12px;
+        }
+        &--icon{
+          button{
+            margin: -64px -152px -6px 65px;
+            width: 74px;
+            height: 35px;
+            padding: 9px 0;
+          }
+        }
+      }
+    }
+  }
+}
+}
+#global{
+  margin-left: -24px;
+  .container{
+    .top{
+      &--grand{
+        &__h{
+          font-size: 17.43px;
+          margin-left: 29px;
+        }
+        .layout{
+          .all{
+            padding: 1px;
+            &--line{
+              width: 298px;
+              height: 460px;
+              margin: 41px 13px 0 29px;
+              .estate{
+                &--image{
+                  padding: 13px 5px 68px 0;
+                }
+              }
+            }
+          }
+          .recent{
+            .latest{
+              &--h{
+                font-size: 24.43px;
+              }
+              .line{
+                width: 267px;
+                &--more{
+                  padding-left: 29px;
+                  &__text{
+                    width: 233px;
+                    padding: 30px 0 20px 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}
+  #review #reviews .container .building--bl__search--icon button {
+    margin: -64px -137px -6px 65px;
+  }
+}
+
+@media (max-width: 320px) {
+#review #reviews .container .building--bl__search input {
+
+}
+#review #reviews .container .building--bl__search input {
+width: 291px;
+height: 49px;
+font-size: 12px;
+}
+
+
+
+#review #reviews .container .building--bl__search--icon button {
+width: 74px;
+height: 35px;
+padding: 9px 0;
+}
+#review #reviews .container .building--bl {
+width: 304px;
+height: 73px;
+margin: 114px 1px -1px -8px;
+}
+#review #global .container .top--grand .layout .all--line {
+width: 298px;
+margin: 41px 13px 0 29px;
+}
+#review #global .container .top--grand .layout .all--line .estate--image {
+padding: 13px 5px 68px 0;
+}
+#review #global {
+margin-left: -24px;
+}
+#review #global .container .top--grand__h {
+font-size: 17.43px;
+margin-left: 29px;
+}
+#review #global .container .top--grand .layout .all {
+padding: 1px;
+}
+#review #global .container .top--grand .layout .recent .latest--h {
+font-size: 24.43px;
+}
+
+#review #global .container .top--grand .layout .recent .latest .line--more {
+padding-left: 80px;
+}
+#review #global .container .top--grand .layout .recent .latest .line--more__text {
+padding: 30px 0 20px 0;
+}
+#review #global .container .top--grand .layout .recent .latest .line--more {
+padding-left: 29px;
+}
+}

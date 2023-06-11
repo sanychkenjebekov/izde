@@ -5,6 +5,7 @@ import meet3 from '../../../img/meet3.png'
 import meet4 from '../../../img/meet4.png'
 import meet5 from '../../../img/meet5.png'
 import meet6 from '../../../img/meet6.png'
+import {Link} from "react-router-dom";
 
 
 const Meet = () => {
@@ -14,7 +15,7 @@ const Meet = () => {
                 <div className="meet">
                     <div className="meet--about">
                         <h1>Meet our SuperAgents</h1>
-                        <button>See more</button>
+                        <Link to={'/agents'}><button>See more</button></Link>
                     </div>
                     <div className="meet--cardAll">
                         <div className="meet--cardAll__card">
@@ -70,7 +71,7 @@ const Meet = () => {
                     <div className="meet--list">
                         <h2>List your property with us</h2>
                         <p>Grow your business with property finder</p>
-                        <button>Get Started</button>
+                        <Link to={'/login'}><button>Get Started</button></Link>
                     </div>
                 </div>
             </div>

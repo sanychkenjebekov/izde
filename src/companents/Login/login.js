@@ -9,7 +9,7 @@ import {GlobalContext} from "../../context";
 
 
 const Login = () => {
-    const {setProfil} = useContext(GlobalContext)
+    const {setProfil,login} = useContext(GlobalContext)
     const {setUsers} = useContext(GlobalContext)
     const [email, setEmail] = useState("");
     const [showPassword, setShowPassword] = useState(false);
@@ -28,6 +28,7 @@ const Login = () => {
             setFormValid(false)
         } else {
             setFormValid(true)
+            login()
         }
     })
 
@@ -45,6 +46,14 @@ const Login = () => {
             setEmailError("");
         }
     };
+
+    useEffect(() => {
+        localStorage.setItem("email", email);
+    }, [email]);
+
+    useEffect(() => {
+        localStorage.setItem("password", password);
+    }, [password]);
 
     const passwordHandler = (e) => {
         setPassword(e.target.value);
@@ -67,6 +76,10 @@ const Login = () => {
                 break;
         }
     };
+    const userBlock = ()=>{
+        setUsers(true)
+        setProfil(false)
+    }
     return (
         <div id='login'>
             <div className="container">
@@ -116,8 +129,8 @@ const Login = () => {
                             <p>We’ll call or text you to confirm your number. Standard message and data rates apply.</p>
                             <a href="">Forgot your password?</a>
                             <a href="">Don’t have an account? Register</a>
-                            <Link to='/'>
-                                <button disabled={!formValid} type='submit'>
+                            <Link to='/favoriteSetings'>
+                                <button onClick={userBlock} disabled={!formValid} type='submit'>
                                     Continue
                                 </button>
                             </Link>
