@@ -1,12 +1,23 @@
 import React from 'react';
+import pay from '../../../img/elkart.png'
+import pay2 from '../../../img/odengi.png'
+import pay3 from '../../../img/mbank.png'
+import pay4 from '../../../img/elsome.png'
+import pay5 from '../../../img/Visa.png'
+import pay6 from '../../../img/GooglePay.png'
 
 const PaidSel = () => {
     const sale = (e)=>{
         const s = document.querySelector('.paidSale')
+        const r = document.querySelector('.paidRent')
         if(!e.target.classList.contains('active')){
             e.target.classList.add('active')
             s.style.background = '#0762E5'
             s.style.color = 'white'
+
+            e.target.classList.remove('active')
+            r.style.background = 'none'
+            r.style.color = 'rgba(0, 74, 96, 0.7)'
         }else {
             e.target.classList.remove('active')
             s.style.background = 'none'
@@ -15,10 +26,15 @@ const PaidSel = () => {
     }
     const rent = (e)=>{
         const r = document.querySelector('.paidRent')
+        const s = document.querySelector('.paidSale')
         if(!e.target.classList.contains('active')){
             e.target.classList.add('active')
             r.style.background = '#0762E5'
             r.style.color = 'white'
+
+            e.target.classList.remove('active')
+            s.style.background = 'none'
+            s.style.color = 'rgba(0, 74, 96, 0.7)'
         }else {
             e.target.classList.remove('active')
             r.style.background = 'none'

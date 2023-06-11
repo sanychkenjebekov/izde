@@ -8,6 +8,7 @@ import "./media.scss"
 import svg from "../../img/svg.svg"
 import {FaBath, FaVectorSquare} from "react-icons/fa";
 import {BiBed} from "react-icons/bi";
+import {Link} from "react-router-dom";
 
 const Buy = () => {
     return (
@@ -51,7 +52,7 @@ const Buy = () => {
                             </select>
                         </div>
                     </div>
-                    <div className='buy--more'>
+                    <Link to={'/buyDetails'}><div className='buy--more'>
                         <div>
                             <div className='buy--more__card'>
                                 <div className='buy--more__card--into'>
@@ -247,7 +248,7 @@ const Buy = () => {
                                 <a href="#">Hotel Apartments for sale</a>
                             </div>
                         </div>
-                    </div>
+                    </div></Link>
                     <div className='buy--num'>
                         <div className='buy--num__he'>
                             <h6>1</h6>

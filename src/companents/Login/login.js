@@ -9,7 +9,7 @@ import {GlobalContext} from "../../context";
 
 
 const Login = () => {
-    const {setProfil} = useContext(GlobalContext)
+    const {setProfil,login} = useContext(GlobalContext)
     const {setUsers} = useContext(GlobalContext)
     const [email, setEmail] = useState("");
     const [showPassword, setShowPassword] = useState(false);
@@ -28,7 +28,7 @@ const Login = () => {
             setFormValid(false)
         } else {
             setFormValid(true)
-
+            login()
         }
     })
 
@@ -46,6 +46,14 @@ const Login = () => {
             setEmailError("");
         }
     };
+
+    useEffect(() => {
+        localStorage.setItem("email", email);
+    }, [email]);
+
+    useEffect(() => {
+        localStorage.setItem("password", password);
+    }, [password]);
 
     const passwordHandler = (e) => {
         setPassword(e.target.value);

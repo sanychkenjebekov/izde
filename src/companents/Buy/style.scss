@@ -436,7 +436,10 @@
       }
       &__timur{
         width: 195px;
-        //padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
         &--pov{
           display: flex;
           //flex-direction: column;
@@ -465,6 +468,10 @@
           border-radius: 8px;
           width: 163px;
           height: 40px;
+          &:hover{
+            background: #0762E5;
+            color: #FFFFFF;
+          }
         }
       }
     }
@@ -477,6 +484,9 @@
       &__to{
         display: flex;
         p{
+          display: flex;
+          align-items: center;
+          gap: 5px;
           font-weight: 400;
           font-size: 18px;
           color: #004A60;

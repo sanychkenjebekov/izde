@@ -1,30 +1,40 @@
-import React from 'react';
+import React, {useState} from 'react';
 import one from "../../../img/one.png"
 import two from "../../../img/two.png"
 import three from "../../../img/three.png"
 import four from "../../../img/four.png"
 import five from "../../../img/five.png"
-import {BsBookmark, BsBuilding, BsBuildings, BsPersonAdd} from "react-icons/bs";
+import {BsBookmark, BsBuilding, BsBuildings, BsFillBookmarkFill, BsPersonAdd} from "react-icons/bs";
 import {FaBath, FaVectorSquare} from "react-icons/fa";
 import {BiBed, BiHomeAlt2} from "react-icons/bi";
+import Tv from "./tv";
 
 const Dream = () => {
+    const [img, setImg] = useState(one)
+    const [fav, setFav] = useState(false)
     return (
+        <>
         <div id="dream">
             <div className="container">
                 <div className="dream">
                     <h1>Rent a dream apartment</h1>
                     <div className="dream--photos">
-                        <img src={one} alt=""/>
+                        <img width={561} height={375} style={{borderRadius:'20px 0 0 20px'}} src={img} alt=""/>
                         <div className='dream--photos__four'>
-                            <img src={two} alt=""/>
-                            <img src={five} alt=""/>
-                            <img src={three} alt=""/>
-                            <img src={four} alt=""/>
+                            <img onClick={()=>setImg(two)} src={two} alt=""/>
+                            <img onClick={()=>setImg(five)} src={five} alt=""/>
+                            <img onClick={()=>setImg(three)} src={three} alt=""/>
+                            <img onClick={()=>setImg(four)} src={four} alt=""/>
                         </div>
                     </div>
                     <div className='dream--texts'>
-                        <h2>The Grand Estate <BsBookmark/></h2>
+                        {/*<h2>The Grand Estate <BsBookmark/></h2>*/}
+                        {fav ?
+                            <h2 onClick={()=>setFav(false)}>The Grand Estate <BsFillBookmarkFill/></h2>
+                            :
+                            <h2 onClick={()=>setFav(true)}>The Grand Estate <BsBookmark/></h2>
+                        }
+
                         <div className='dream--texts__text'>
                             <div className='dream--texts__text--room'>
                                 <h3><BiHomeAlt2/> Apartment</h3>
@@ -78,6 +88,8 @@ const Dream = () => {
                 </div>
             </div>
         </div>
+            <Tv/>
+        </>
     );
 };
 

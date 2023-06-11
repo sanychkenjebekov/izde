@@ -54,7 +54,16 @@
 }
 
 @media (max-width: 768px) {
-
+  #paidAd .payCardAlls--payCardAll {
+    width: 440px;
+    height: 385px;
+  }
+  #paidAd .payCardAlls--payCardAll__card--btn button {
+    width: 200px;
+  }
+  #paidAd .payCardAlls--payCardAll__card--btn button:last-child {
+    width: 200px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -62,7 +71,45 @@
 }
 
 @media (max-width: 540px) {
-
+  #paidAd .payCardAlls--payCardAll {
+    width: 325px;
+    height: 475px;
+    padding: 35px 37px;
+    transform: translate(0, 13%);
+  }
+  #paidAd .payCardAlls--payCardAll__card--pay {
+    flex-wrap: wrap;
+    column-gap: 15px;
+    justify-content: space-between;
+    width: 240px;
+  }
+  #paidAd .payCardAlls--payCardAll__card--inp input {
+    width: 350px;
+  }
+  #paidAd .payCardAlls--payCardAll__card--inp__two {
+    gap: 35px;
+  }
+  #paidAd .payCardAlls--payCardAll__card--inp__two input{
+    width: 210px;
+  }
+  #paidAd .payCardAlls--payCardAll__card--inp__two input:last-child {
+    width: 94px;
+  }
+  #paidAd .payCardAlls--payCardAll__card--btn {
+    gap: 15px;
+    padding-top: 20px;
+    flex-direction: column;
+  }
+  #paidAd .payCardAlls--payCardAll__card--btn button {
+    width: 300px;
+    height: 45px;
+    font-size: 17px;
+  }
+  #paidAd .payCardAlls--payCardAll__card--btn button:last-child {
+    width: 300px;
+    height: 45px;
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -80,9 +127,21 @@
   #paidSel .paidSel .btnCenter {
     font-size: 17px;
   }
+  #paidAd .likeAll--like__h {
+    width: 335px;
+  }
+  #paidAd .likeAll--like__h h2 {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 420px) {
+  #paidAd .payCardAlls--payCardAll__card h1 {
+    font-size: 20px;
+  }
+  #paidAd .payCardAlls--payCardAll__card--inp p {
+    font-size: 16px;
+  }
   #paidSel .paidSel{
     width: 95%;
   }
@@ -92,9 +151,27 @@
   #paidSel .paidSel .btnCenter {
     padding: 8px 95px;
   }
+  #paidAd .payCardAlls--payCardAll {
+    width: 255px;
+  }
+  #paidAd .payCardAlls--payCardAll__card--inp input {
+    width: 290px;
+  }
+  #paidAd .payCardAlls--payCardAll__card--inp__two input{
+    width: 165px;
+  }
+  #paidAd .payCardAlls--payCardAll__card--inp__two input:last-child {
+    width: 80px;
+  }
+  #paidAd .likeAll--like__h {
+    width: 300px;
+  }
 }
 
 @media (max-width: 360px) {
+  #paidAd .payCardAlls--payCardAll__card h1 {
+    font-size: 18px;
+  }
   #paidSel .paidSel {
     width: 100%;
   }
@@ -111,6 +188,34 @@
   #paidSel .paidSel .btnCenter {
     padding: 8px 80px;
     font-size: 15px;
+  }
+  #paidAd .payCardAlls--payCardAll {
+    width: 225px;
+  }
+  #paidAd .payCardAlls--payCardAll__card--inp input {
+    width: 260px;
+  }
+  #paidAd .payCardAlls--payCardAll__card--inp__two input {
+    width: 145px;
+  }
+  #paidAd .payCardAlls--payCardAll__card--inp__two input:last-child {
+    width: 70px;
+  }
+  #paidAd .payCardAlls--payCardAll__card--btn button {
+    width: 273px;
+  }
+  #paidAd .payCardAlls--payCardAll__card--btn button:last-child{
+    width: 273px;
+  }
+  #paidAd .likeAll--like__h {
+    width: 270px;
+  }
+  #paidAd .likeAll--like__h h2 {
+    font-size: 18px;
+  }
+  #paidAd .likeAll--like img{
+    width: 55px;
+    height: 55px;
   }
 }
 

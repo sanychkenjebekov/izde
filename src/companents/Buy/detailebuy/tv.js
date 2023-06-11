@@ -9,6 +9,7 @@ import {TbAirConditioning} from "react-icons/tb";
 import man from "../../../img/man.svg"
 import {IoLogoNoSmoking} from "react-icons/io";
 import {AiOutlineSound} from "react-icons/ai";
+import {Link} from "react-router-dom";
 
 
 const Wifi = () => {
@@ -44,8 +45,8 @@ const Wifi = () => {
                                 <h1>Owner</h1>
                             </div>
                             <img src={man} alt=""/>
-                            <h3>Timur Timurov</h3>
-                            <div><button>Contact owner</button></div>
+                            <Link to={'/owner'}><h3>Timur Timurov</h3></Link>
+                            <Link to={'/owner'}><div><button>Contact owner</button></div></Link>
                         </div>
                     </div>
 
