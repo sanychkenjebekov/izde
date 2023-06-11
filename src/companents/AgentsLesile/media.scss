@@ -1,0 +1,334 @@
+@media (max-width: 905px) {
+  #lesile {
+    .lesile {
+      &--block {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        &__group {
+          img {
+          }
+
+          &--text {
+            h1 {
+            }
+
+            h4 {
+            }
+
+            button {
+            }
+
+            p {
+            }
+          }
+        }
+
+        &__contact {
+          padding: 18px;
+          gap: 30px;
+          height: 198px;
+          h2 {
+            font-size: 18px;
+            padding: 5px 0 0 0;
+          }
+
+          &--btn {
+            button {
+              width: 189px;
+              height: 56px;
+            }
+
+          }
+        }
+      }
+
+      &--group2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0 0 0;
+        gap: 50px;
+        &__text {
+          width: 252px;
+          h1 {
+          }
+
+          &--para {
+            p {
+            }
+          }
+        }
+
+        &__compy {
+          padding: 4px;
+          gap: 21px;
+          width: 228px;
+          height: 264px;
+          h2 {
+            font-size: 18px;
+            padding: 10px 0 0  0;
+          }
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 660px) {
+  #lesile {
+    .lesile {
+      &--block {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        &__group {
+          display: flex;
+          align-items: center;
+          width: 501px;
+          justify-content: space-between;
+          gap: 20px;
+          padding: 0 0 10px 0;
+          flex-direction: column;
+          border: none;
+          img {
+            width: 240px;
+          }
+
+          &--text {
+            h1 {
+            }
+            h4 {
+
+            }
+            button {
+
+            }
+            p {
+              font-size: 14px;
+              padding: 68px 0 0 0;
+            }
+          }
+        }
+
+        &__contact {
+          padding: 18px;
+          gap: 30px;
+          height: 198px;
+          h2 {
+            font-size: 18px;
+            padding: 5px 0 0 0;
+          }
+
+          &--btn {
+            button {
+              width: 189px;
+              height: 56px;
+            }
+
+          }
+        }
+      }
+
+      &--group2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0 0 0;
+        gap: 25px;
+        flex-direction: column;
+        &__text {
+          width: 222px;
+          h1 {
+          }
+
+          &--para {
+            p {
+            }
+          }
+        }
+
+        &__compy {
+          padding: 4px;
+          gap: 21px;
+          width: 228px;
+          height: 264px;
+          h2 {
+            font-size: 18px;
+            padding: 10px 0 0  0;
+          }
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+   #lesile {
+    .lesile {
+      &--block {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        &__group {
+          width: 228px;
+          img {
+          }
+
+          &--text {
+            //width: 222px;
+            h1 {
+            }
+
+            h4 {
+            }
+
+            button {
+            }
+
+            p {
+            }
+          }
+        }
+
+        &__contact {
+          padding: 18px;
+          gap: 30px;
+          height: 198px;
+          h2 {
+            font-size: 18px;
+            padding: 5px 0 0 0;
+          }
+
+          &--btn {
+            button {
+              width: 189px;
+              height: 56px;
+            }
+
+          }
+        }
+      }
+
+      &--group2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0 0 0;
+        gap: 50px;
+        &__text {
+          //width: 222px;
+          h1 {
+          }
+
+          &--para {
+            p {
+            }
+          }
+        }
+
+        &__compy {
+          padding: 4px;
+          gap: 21px;
+          width: 228px;
+          height: 264px;
+          h2 {
+            font-size: 18px;
+            padding: 10px 0 0  0;
+          }
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+   #lesile {
+    .lesile {
+      &--block {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        &__group {
+          img {
+          }
+
+          &--text {
+            //width: 222px;
+            h1 {
+            }
+
+            h4 {
+            }
+
+            button {
+            }
+
+            p {
+            }
+          }
+        }
+
+        &__contact {
+          padding: 18px;
+          gap: 30px;
+          height: 198px;
+          h2 {
+            font-size: 18px;
+            padding: 5px 0 0 0;
+          }
+
+          &--btn {
+            button {
+              width: 189px;
+              height: 56px;
+            }
+
+          }
+        }
+      }
+
+      &--group2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0 0 0;
+        gap: 50px;
+        &__text {
+          width: 222px;
+          h1 {
+          }
+
+          &--para {
+            p {
+            }
+          }
+        }
+
+        &__compy {
+          padding: 4px;
+          gap: 21px;
+          width: 228px;
+          height: 264px;
+          h2 {
+            font-size: 18px;
+            padding: 10px 0 0  0;
+          }
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
