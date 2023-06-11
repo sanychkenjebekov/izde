@@ -7,10 +7,7 @@ import five from "../../../img/five.png"
 import {BsBookmark, BsBuilding, BsBuildings, BsFillBookmarkFill, BsPersonAdd} from "react-icons/bs";
 import {FaBath, FaVectorSquare} from "react-icons/fa";
 import {BiBed, BiHomeAlt2} from "react-icons/bi";
-
 import Tv from "./tv";
-
-import Wifi from "./tv";
 import Swip from "./swip";
 
 
@@ -34,7 +31,6 @@ const Dream = () => {
                         </div>
                     </div>
                     <div className='dream--texts'>
-                        {/*<h2>The Grand Estate <BsBookmark/></h2>*/}
                         {fav ?
                             <h2 onClick={()=>setFav(false)}>The Grand Estate <BsFillBookmarkFill/></h2>
                             :
@@ -45,28 +41,6 @@ const Dream = () => {
                             <div className='dream--texts__text--room'>
                                 <h3><BiHomeAlt2/> Apartment</h3>
                                 <h3><FaVectorSquare/> Square: 120 m2</h3>
-
-            <div id="dream">
-                <div className="container">
-                    <div className="dream">
-                        <h1>Rent a dream apartment</h1>
-                        <div className="dream--photos">
-                            <img src={one} alt=""/>
-                            <div className='dream--photos__four'>
-                                <img src={two} alt=""/>
-                                <img src={five} alt=""/>
-                                <img src={three} alt=""/>
-                                <img src={four} alt=""/>
-                            </div>
-                        </div>
-                        <div className='dream--texts'>
-                            <h2>The Grand Estate <BsBookmark/></h2>
-                            <div className='dream--texts__text'>
-                                <div className='dream--texts__text--room'>
-                                    <h3><BiHomeAlt2/> Apartment</h3>
-                                    <h3><FaVectorSquare/> Square: 120 m2</h3>
-
-
                                 </div>
                                 <div className='dream--texts__text--room'>
                                     <h3><BiBed/> 1 Bedroom</h3>
@@ -115,15 +89,8 @@ const Dream = () => {
                     </div>
                 </div>
             </div>
-
-        </div>
             <Tv/>
-
-
-            <Wifi/>
             <Swip/>
-
-
         </>
     );
 };

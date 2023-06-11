@@ -15,7 +15,7 @@ import {Link} from "react-router-dom";
 import miroom from "../../../img/miroom.png"
 import miroom2 from "../../../img/miroom2.png"
 import miroom3 from "../../../img/miroom3.png"
-import Swip from "./swip";
+
 
 
 
@@ -53,16 +53,9 @@ const Wifi = () => {
                                     <h1>Owner</h1>
                                 </div>
                                 <img src={man} alt=""/>
-                                <h3>Timur Timurov</h3>
-                                <div>
-                                    <button>Contact owner</button>
-                                </div>
+                                <Link to={'/owner'}><h3>Timur Timurov</h3></Link>
+                                <Link to={'/owner'}><div><button>Contact owner</button></div></Link>
                             </div>
-
-                            <img src={man} alt=""/>
-                            <Link to={'/owner'}><h3>Timur Timurov</h3></Link>
-                            <Link to={'/owner'}><div><button>Contact owner</button></div></Link>
-
                         </div>
 
                         <div className='owner--rules'>
@@ -94,7 +87,6 @@ const Wifi = () => {
                 </div>
             </div>
 
-            {/*<Swip/>*/}
         </>
     );
 };
