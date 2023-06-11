@@ -9,10 +9,14 @@ import {TbAirConditioning} from "react-icons/tb";
 import man from "../../../img/man.svg"
 import {IoLogoNoSmoking} from "react-icons/io";
 import {AiOutlineSound} from "react-icons/ai";
+
+import {Link} from "react-router-dom";
+
 import miroom from "../../../img/miroom.png"
 import miroom2 from "../../../img/miroom2.png"
 import miroom3 from "../../../img/miroom3.png"
 import Swip from "./swip";
+
 
 
 const Wifi = () => {
@@ -54,6 +58,11 @@ const Wifi = () => {
                                     <button>Contact owner</button>
                                 </div>
                             </div>
+
+                            <img src={man} alt=""/>
+                            <Link to={'/owner'}><h3>Timur Timurov</h3></Link>
+                            <Link to={'/owner'}><div><button>Contact owner</button></div></Link>
+
                         </div>
 
                         <div className='owner--rules'>

@@ -6,17 +6,15 @@ import Home from "./companents/Home";
 import Login from "./companents/Login/login";
 import Agents from "./companents/Agents/agents";
 import Buy from "./companents/Buy";
-import Dream from "./companents/Buy/detailebuy";
-import Wifi from "./companents/Buy/detailebuy/tv";
 import Rent from "./companents/Buy/Rent";
-
 import {useEffect} from "react";
 import FavoriteSetings from "./companents/FavoritesSetings";
 import PaidAd from "./companents/PaidAd";
-import Favorite from "./companents/Favorite";
-
 import Reviews from "./companents/Reviews/reviews"
+import Dream from "./companents/Buy/detailebuy";
+import Favorite from "./companents/Favorite";
 import Swip from "./companents/Buy/detailebuy/swip";
+
 
 
 
@@ -28,23 +26,26 @@ function App() {
   return (
     <div className="App">
       <Header/>
-
-        {/*<Favorite/>*/}
       <Routes>
           <Route path={'/'} element={<Home/>}/>
           <Route path={'/login'} element={<Login/>}/>
           <Route path={'/agents'} element={<Agents/>}/>
           <Route path={'/buy'} element={<Buy/>}/>
           <Route path={'/rent'} element={<Rent/>}/>
+
+        <Route path={'/favoriteSetings'} element={<FavoriteSetings/>}/>
+
           <Route path={'/dream'} element={<Dream/>}/>
 
 
 
           <Route path={'/favoriteSetings'} element={<FavoriteSetings/>}/>
+
         <Route path={'/addProperty'} element={<PaidAd/>}/>
-
         <Route path={'/reviews'} element={<Reviews/>}/>
-
+        <Route path={'/buyDetails'} element={<Dream/>}/>
+        <Route path={'/rentDetails'} element={<Dream/>}/>
+        <Route path={'/owner'} element={<Favorite/>}/>
       </Routes>
       <Footer/>
     </div>

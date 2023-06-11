@@ -7,8 +7,8 @@ import {GlobalContext} from "../../context";
 
 
 const Header = () => {
-    const {users} = useContext(GlobalContext)
-    const {profil} = useContext(GlobalContext)
+    const {users,burgerUser,setBurgerUser} = useContext(GlobalContext)
+    const {profil,setProfil,burgerProfil,setBurgerProfil} = useContext(GlobalContext)
 
     const burger = (e)=>{
         const b = document.querySelector('.header--burgerAll__burger--1')
@@ -51,17 +51,25 @@ const Header = () => {
     useEffect(()=>{
         const hUser = document.querySelector('.headerUser')
         const hLogin = document.querySelector('.headerLogin')
+        const bLogin = document.querySelector('.burgerLogin')
+        const bUser = document.querySelector('.burgerUser')
         if(users === true){
+           setProfil(false)
+            setBurgerProfil(false)
             hUser.style.display = 'block'
+            bUser.style.display = 'block'
         }else {
             hUser.style.display = 'none'
+            bUser.style.display = 'none'
         }
         if(profil === true){
             hLogin.style.display = 'block'
+            bLogin.style.display = 'block'
         }else {
             hLogin.style.display = 'none'
+            bLogin.style.display = 'none'
         }
-    },[users,profil])
+    },[users,profil,burgerUser,burgerProfil])
     return (
         <div id='header'>
             <div className="container">

@@ -29,4 +29,160 @@
       margin-top: 370px;
     }
   }
+  .payCardAlls{
+    display: none;
+    &--payCardAll{
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      padding: 58px 37px;
+      gap: 50px;
+      width: 627px;
+      height: 400px;
+      background: #FFFFFF;
+      border-radius: 32px;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      transform: translate(0 ,18%);
+      margin: 0 auto;
+      z-index: 1;
+      &__card{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h1{
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 36px;
+          color: #004A60;
+        }
+        &--pay{
+          display: flex;
+          gap: 15px;
+          padding: 15px 0 30px 0;
+        }
+        &--inp{
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: #004A60;
+          }
+          input{
+            width: 421px;
+            height: 40px;
+            padding: 0 0 0 10px;
+            background: rgba(0, 74, 96, 0.1);
+            border-radius: 8px;
+            border: none;
+          }
+          &__two{
+            display: flex;
+            align-items: center;
+            gap: 45px;
+            input{
+              width: 281px;
+              height: 40px;
+              background: rgba(0, 74, 96, 0.1);
+              border-radius: 8px;
+            }
+            input:last-child{
+              width: 104px;
+              height: 40px;
+              background: rgba(0, 74, 96, 0.1);
+              border-radius: 8px;
+            }
+          }
+        }
+        &--btn{
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          padding-top: 50px;
+          button{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: #004A60;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 270px;
+            height: 54px;
+            border: 1px solid rgba(0, 74, 96, 0.46);
+            border-radius: 11px;
+          }
+          button:last-child{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            width: 270px;
+            height: 54px;
+            left: 298px;
+            background: #1B76F9;
+            border: 1px solid #0762E5;
+            border-radius: 11px;
+          }
+        }
+      }
+    }
+  }
+  .payCardBg{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(7, 98, 229, 0.15);
+  }
+  .likeAll{
+    display: none;
+  &--like{
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translate(0 ,39%);
+    margin: 0 auto;
+    gap: 20px;
+    &__h{
+      width: 400px;
+      padding:40px 20px;
+      background: #004A60;
+      border-radius: 8px;
+      h2{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+    }
+  }
+  }
+  .likeBg{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.40);
+  }
 }

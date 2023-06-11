@@ -95,6 +95,11 @@
         width: 230px;
         height: 56px;
         background: none;
+        transition: .3s;
+        &:hover{
+          background: #0762E5;
+          color: #FFFFFF;
+        }
       }
     }
   }

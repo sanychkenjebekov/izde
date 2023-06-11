@@ -1,5 +1,6 @@
 import React from 'react';
 import ExploreSwip from "../ExploreSwip";
+import {Link} from "react-router-dom";
 
 const Explore = () => {
     return (
@@ -13,7 +14,7 @@ const Explore = () => {
                                 <option>Recently added</option>
                                 <option>Recently added2</option>
                             </select>
-                            <button>See more</button>
+                            <Link to={'/buy'}><button>See more</button></Link>
                         </div>
                     </div>
                     <ExploreSwip/>

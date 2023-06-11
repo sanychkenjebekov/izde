@@ -52,7 +52,7 @@ const Buy = () => {
                             </select>
                         </div>
                     </div>
-                    <div className='buy--more'>
+                    <Link to={'/buyDetails'}><div className='buy--more'>
                         <div>
                             <Link to={`/dream`}>
                                 <div className='buy--more__card'>
@@ -250,7 +250,7 @@ const Buy = () => {
                                 <a href="#">Hotel Apartments for sale</a>
                             </div>
                         </div>
-                    </div>
+                    </div></Link>
                     <div className='buy--num'>
                         <div className='buy--num__he'>
                             <h6>1</h6>
