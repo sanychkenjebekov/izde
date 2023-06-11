@@ -1,0 +1,387 @@
+//@media (max-width: 992px) {
+//  #lesile2{
+//    .lesile2{
+//      &--block{
+//        display: flex;
+//        align-items: center;
+//        flex-direction: column;
+//        gap: 35px;
+//        &__group{
+//          gap: 30px;
+//          img{}
+//          &--text{
+//            a{
+//              font-size: 18px;
+//              width: 168px;
+//            }
+//            h4{
+//              padding: 2px 0 5px 0;
+//            }
+//            h3{font-size: 14px  }
+//            p{
+//              font-size: 12px;
+//              padding: 103px 0 0 0;
+//            }
+//          }
+//        }
+//        &__contact{
+//          padding: 18px;
+//          gap: 27px;
+//          height: 188px;
+//          h2{
+//            font-size: 18px;
+//            padding: 1px 0 0 0;
+//          }
+//          &--btn{
+//            button{}
+//          }
+//        }
+//      }
+//      &--group2{
+//        display: flex;
+//        align-items: center;
+//        justify-content: space-evenly;
+//        padding: 35px 0 0 0;
+//        &__text{
+//          width: 220px;
+//          &--para{}
+//        }
+//        &__compy{
+//          padding: 10px;
+//          gap: 17px;
+//          width: 246px;
+//          height: 280px;
+//          h2 {
+//            font-size: 18px;
+//          }
+//            img{}
+//        }
+//      }
+//    }
+//  }
+//}
+@media (max-width: 905px) {
+  #lesile2{
+    .lesile2{
+      &--block{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 35px;
+        &__group{
+          padding: 0 0 25px 0;
+          //display: flex;
+          //flex-direction: column;
+          //border: none;
+          img{
+            width: 240px;
+          }
+          &--text{
+            a{
+              font-size: 18px;
+              width: 153px;
+            }
+            h4{
+              font-size: 28.43px;
+              padding: 14px 0 12px 0;
+            }
+            h3{
+               font-size: 14px;
+            }
+            p{
+              font-size: 12px;
+              padding: 82px 0 0 0;
+            }
+          }
+          }
+        &__contact{
+          padding: 18px;
+          gap: 25px;
+          height: 175px;
+          h2{
+            font-size: 17px;
+            padding: 10px 0 0 0;}
+          &--btn{
+            button{
+              width: 186px;
+              height: 45px;
+            }
+          }
+        }
+        }
+      &--group2{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 35px 0 0 0;
+        &__text{
+          width: 220px;
+          h1{}
+          &--para{
+            p{}
+          }
+        }
+        &__compy{
+          padding: 20px;
+          gap: 21px;
+          width: 219px;
+          height: 258px;
+          h2{
+            font-size:17px;
+          }
+          img{}
+        }
+      }
+      }
+    }
+  }
+@media (max-width: 660px) {
+  #lesile2{
+    .lesile2{
+      &--block{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        &__group{
+          padding: 0 0 25px 0;
+          display: flex;
+          flex-direction: column;
+          border: none;
+          width: 228px;
+          img{
+            width: 240px;
+          }
+          &--text{
+            a{
+              font-size: 18px;
+              width: 153px;
+            }
+            h4{
+              font-size: 28.43px;
+              padding: 14px 0 12px 0;
+            }
+            h3{
+               font-size: 14px;
+            }
+            p{
+              font-size: 12px;
+              padding: 82px 0 0 0;
+            }
+          }
+          }
+        &__contact{
+          //padding: 0;
+          //gap: 11px;
+          //height: 118px;
+          //width: 320px;
+          h2{
+            font-size: 17px;
+            padding: 10px 0 0 0;}
+          &--btn{
+            button{
+              //width: 137px;
+              //height: 50px;
+              //padding: 10px 20px;
+            }
+          }
+        }
+        }
+      &--group2{
+        display: flex;
+        align-items: center;
+        padding: 35px 0 0 0;
+        flex-direction: column;
+        gap: 20px;
+        &__text{
+          width: 220px;
+          h1{}
+          &--para{
+            p{}
+          }
+        }
+        &__compy{
+          padding: 20px;
+          gap: 21px;
+          width: 219px;
+          height: 258px;
+          h2{
+            font-size:17px;
+          }
+          img{}
+        }
+      }
+      }
+    }
+  }
+@media (max-width: 375px) {
+  #lesile2{
+    .lesile2{
+      &--block{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        &__group{
+          padding: 0 0 25px 0;
+          display: flex;
+          flex-direction: column;
+          border: none;
+          width: 228px;
+          img{
+            width: 240px;
+          }
+          &--text{
+            a{
+              font-size: 18px;
+              width: 153px;
+            }
+            h4{
+              font-size: 28.43px;
+              padding: 14px 0 12px 0;
+            }
+            h3{
+               font-size: 14px;
+            }
+            p{
+              font-size: 12px;
+              padding: 82px 0 0 0;
+            }
+          }
+          }
+        &__contact{
+          padding: 0;
+          gap: 17px;
+          height: 127px;
+          width: 300px;
+          h2{
+            font-size: 17px;
+            padding: 10px 0 0 0;}
+          &--btn{
+            margin: 0 auto;
+            display: flex;
+            padding: 0;
+            gap: 8px;
+            flex-direction: row;
+            button{
+              width: 137px;
+              height: 50px;
+              padding: 10px 20px;
+            }
+          }
+        }
+        }
+      &--group2{
+        display: flex;
+        align-items: center;
+        padding: 35px 0 0 0;
+        flex-direction: column;
+        gap: 20px;
+        &__text{
+          width: 220px;
+          h1{}
+          &--para{
+            p{}
+          }
+        }
+        &__compy{
+          padding: 20px;
+          gap: 21px;
+          width: 219px;
+          height: 258px;
+          h2{
+            font-size:17px;
+          }
+          img{}
+        }
+      }
+      }
+    }
+  }
+@media (max-width: 320px) {
+  #lesile2{
+    .lesile2{
+      &--block{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        &__group{
+          padding: 0 0 25px 0;
+          display: flex;
+          flex-direction: column;
+          border: none;
+          width: 228px;
+          img{
+            width: 210px;
+          }
+          &--text{
+            width: 210px;
+            a{
+              font-size: 14px;
+              width: 153px;
+            }
+            h4{
+              font-size: 26.43px;
+              padding: 14px 0 12px 0;
+            }
+            h3{
+              font-size: 13px;
+            }
+            p{
+              font-size: 11px;
+              padding: 72px 0 0 0;
+            }
+          }
+        }
+        &__contact{
+          padding: 0;
+          gap: 16px;
+          height: 126px;
+          width: 299px;
+          h2{
+            font-size: 16px;
+            padding: 9px 0 0 0;}
+          &--btn{
+            margin: 0 auto;
+            display: flex;
+            padding: 0;
+            gap: 8px;
+            flex-direction: row;
+            button{
+              width: 137px;
+              height: 51px;
+              padding: 10px 20px;
+            }
+          }
+        }
+      }
+      &--group2{
+        display: flex;
+        align-items: center;
+        padding: 34px 0 0 0;
+        flex-direction: column;
+        gap: 18px;
+        &__text{
+          width: 200px;
+          h1{}
+          &--para{
+            p{
+              font-size: 14px;
+            }
+          }
+        }
+        &__compy{
+          padding: 20px;
+          gap: 21px;
+          width: 219px;
+          height: 258px;
+          h2{
+            font-size:17px;
+          }
+          img{}
+        }
+      }
+    }
+  }
+}
