@@ -25,10 +25,11 @@
         align-items: center;
         margin-top: 70px;
         width: 710px;
-        height: 200px;
+        // height: 200px;
         background: #FFFFFF;
         border: 1px solid rgba(0, 74, 96, 0.5);
         border-radius: 32px;
+        padding: 0 0 24px 0;
         .section{
           display: none;
         }
@@ -81,7 +82,7 @@
             border: none;
             outline: none;
             padding-left: 30px;
-            width: 660px;
+            width: 630px;
             height: 88px;
             color: rgba(0, 74, 96, 0.5);
             font-size: 16px;
@@ -126,6 +127,27 @@
         align-items: center;
         border: 1px solid rgba(0, 74, 96, 0.7);
         border-radius: 35px;
+        justify-content: center;
+        .link{
+          // position: absolute;
+          // top: 963px;
+          // left: 118px;
+          // z-index: 99;
+        }
+        .linkbtn{
+          display: flex;
+          align-items: center;
+        }
+        .linkbtn svg {
+          vertical-align: middle;
+          margin-bottom: 3px;
+        }
+
+        .linkbtn span {
+          vertical-align: middle;
+          color: #FFFFFF;
+
+        }
         &:hover{
           background: rgba(0, 74, 96, 0.1);
         }
@@ -151,9 +173,9 @@
         button{
           background: #1B76F9;
           border-radius: 16px;
-          padding: 8px 0;
-          color: #FFFFFF;
-          width: 137px;
+          padding: 10px 10px 10px 16px;
+          // width: 137px;
+          font-size: 12.8px;
           border: none;
           outline: none;
           margin-bottom: 35px;

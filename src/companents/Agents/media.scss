@@ -37,10 +37,11 @@
         }
         &__block{
           width: 610px;
-          height: 200px;
+          // height: 200px;
+          padding: 0 0 24px 0;
           &--search{
             input{
-              width: 560px;
+              width: 530px;
               height: 88px;
             }
           }
@@ -58,10 +59,11 @@
         }
         &__block{
           width: 510px;
-          height: 200px;
+          // height: 200px;
+          padding: 0 0 24px 0;
           &--search{
             input{
-              width: 460px;
+              width: 430px;
               height: 88px;
             }
           }
@@ -80,7 +82,8 @@
         }
         &__block{
           width: 410px;
-          height: 230px;
+          // height: 230px;
+          padding: 0 0 24px 0;
           .section{
             display: flex;
             gap: 15px;
@@ -149,7 +152,8 @@
         }
         &__block{
           width: 390px;
-          height: 230px;
+          // height: 230px;
+          padding: 0 0 24px 0;
         }
       }
     }
@@ -164,7 +168,8 @@
         }
         &__block{
           width: 380px;
-          height: 230px;
+          // height: 230px;
+          padding: 0 0 24px 0;
           .section{
             display: flex;
             gap: 15px;
@@ -199,7 +204,8 @@
         }
         &__block{
           width: 340px;
-          height: 230px;
+          // height: 230px;
+          padding: 0 0 24px 0;
           .section{
             display: flex;
             gap: 15px;
@@ -236,7 +242,8 @@
         }
         &__block{
           width: 290px;
-          height: 230px;
+          // height: 230px;
+          padding: 0 0 24px 0;
           .section{
             display: flex;
             gap: 15px;
