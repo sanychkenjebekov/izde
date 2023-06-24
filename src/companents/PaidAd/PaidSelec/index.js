@@ -5,6 +5,7 @@ import pay3 from '../../../img/mbank.png'
 import pay4 from '../../../img/elsome.png'
 import pay5 from '../../../img/Visa.png'
 import pay6 from '../../../img/GooglePay.png'
+import {Link} from "react-router-dom";
 
 const PaidSel = () => {
     const sale = (e)=>{
@@ -63,7 +64,7 @@ const PaidSel = () => {
                             </div>
                         </div>
                     </div>
-                    <button className='btnCenter'>Continue</button>
+                    <Link to={'/addphoto'}><button className='btnCenter'>Continue</button></Link>
                 </div>
             </div>
         </div>
