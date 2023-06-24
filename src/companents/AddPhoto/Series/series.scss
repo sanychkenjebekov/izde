@@ -1,0 +1,213 @@
+#series{
+  padding: 70px 0;
+  font-family: 'Poppins',sans-serif;
+  .series{
+    &--main{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      button{
+        background: none;
+      }
+      h3{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #004A60;
+        padding: 0 0 10px 0;
+      }
+      &__right{
+        &--elit{
+          &__btn{
+            display: flex;
+            gap: 10px;
+            margin:5px 0 20px 0 ;
+            button{
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: rgba(0, 74, 96, 0.7);
+              width: 100px;
+              height: 40px;
+              border: 1px solid #AFC6CD;
+              border-radius: 8px;
+            }
+            button:last-child{
+              width: 161px;
+              height: 40px;
+            }
+          }
+        }
+        &--number{
+          &__btn{
+            display: flex;
+            gap: 10px;
+            margin: 5px 0 20px 0;
+            button{
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: rgba(0, 74, 96, 0.7);
+              width: 40px;
+              height: 40px;
+              border: 1px solid #AFC6CD;
+              border-radius: 8px;
+
+            }
+          }
+        }
+        &--bathroom{
+          &__btn{
+            display: flex;
+            gap: 10px;
+            margin: 5px 0 20px 0;
+            button{
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: rgba(0, 74, 96, 0.7);
+              width: 129px;
+              height: 40px;
+              border: 1px solid #AFC6CD;
+              border-radius: 8px;
+            }
+          }
+        }
+        &--parking{
+          &__btn{
+            display: flex;
+            gap: 10px;
+            margin: 5px 0 20px 0;
+            button{
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: rgba(0, 74, 96, 0.7);
+              width: 129px;
+              height: 40px;
+              border: 1px solid #AFC6CD;
+              border-radius: 8px;
+            }
+          }
+        }
+        &--location{
+          &__btn{
+            margin: 5px 0 20px 0;
+            select{
+              width: 235px;
+              height: 40px;
+              background: rgba(0, 74, 96, 0.1);
+              border-radius: 8px;
+              font-size: 16px;
+              color: rgba(0, 74, 96, 0.7);
+              border: none;
+            }
+          }
+        }
+        &--square{
+          &__btn{
+            margin: 5px 0 20px 0;
+            input{
+              background: rgba(0, 74, 96, 0.1);
+              border-radius: 8px;
+              font-size: 16px;
+              color: rgba(0, 74, 96, 0.7);
+              border: none;
+              padding: 10px 40px 10px 10px;
+            }
+          }
+        }
+        &--floor{
+          &__btn{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin: 5px 0 20px 0;
+            input{
+              width: 95px;
+              height: 40px;
+              background: rgba(0, 74, 96, 0.1);
+              border-radius: 8px;
+              font-size: 16px;
+              color: rgba(0, 74, 96, 0.7);
+              border: none;
+            }
+          }
+        }
+        &--price{
+          &__btn{
+            margin: 5px 0 20px 0;
+            input{
+              width: 251px;
+              height: 40px;
+              background: rgba(0, 74, 96, 0.1);
+              border-radius: 8px;
+              border: none;
+            }
+          }
+        }
+        &--about{
+          &__btn{
+            margin: 5px 0 20px 0;
+            textarea{
+              width: 662px;
+              height: 88px;
+              background: rgba(0, 74, 96, 0.1);
+              border-radius: 8px;
+              border: none;
+              outline: none;
+            }
+          }
+        }
+      }
+      &__left{
+        h3{
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 27px;
+          color: #004A60;
+          padding: 0 0 20px 0;
+        }
+        &--checkbox{
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          &__card{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            p{
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 27px;
+              color: #004A60;
+            }
+            input{
+              width: 24px;
+              height: 24px;
+              background: #FFFFFF;
+              border: 1px solid #004A60;
+              font-size: 16px;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+    &--btn{
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      color: #FFFFFF;
+      width: 330px;
+      height: 54px;
+      background: #1B76F9;
+      border: 1px solid #0762E5;
+      border-radius: 11px;
+    }
+  }
+}
