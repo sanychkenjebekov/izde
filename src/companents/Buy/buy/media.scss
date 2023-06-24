@@ -5,6 +5,15 @@
   #buy .buy--more__sale hr{
     width: 210px;
   }
+  #buy .buy--inputs__sell--to{
+    margin: 15px 8px;
+  }
+  #buy .buy--inputs__pro--add input{
+    width: 510px;
+  }
+  #buy .buy--more__card{
+    width: 560px;
+  }
 }
 @media (max-width: 1024px) {
   #buy .buy--inputs__pro--add input{
@@ -24,6 +33,22 @@
   }
 }
 @media (max-width: 992px) {
+  #buy .buy--inputs{
+    flex-wrap: wrap;
+  }
+  #buy .buy--inputs__sell--to{
+    width: 430px;
+    //margin: 15px 8px;
+  }
+  #buy .buy--inputs__sell--cup{
+    margin: 14px 8px;
+  }
+  #buy .buy--more__card{
+    width: 520px;
+  }
+  #buy .buy--more{
+    flex-direction: column;
+  }
   #buy .buy--more__sale hr{
     width: 300px;
   }
@@ -62,6 +87,9 @@
   }
 }
 @media (max-width: 768px) {
+  #buy .buy--red__text{
+    margin: 15px 0;
+  }
   #buy .buy--inputs__pro--add input{
     width: 277px;
     font-size: 13px;
@@ -123,6 +151,36 @@
   }
 }
 @media (max-width: 640px) {
+  #buy .buy--more__card--into{
+    flex-direction: column;
+  }
+  #buy .buy--more__card{
+    width: 247px;
+  }
+  #buy .buy--more__card{
+    width: 360px;
+  }
+  #buy .buy--inputs__sell select {
+    padding: 14px 14px;
+    margin: 8px 8px;
+  }
+  #buy .buy--inputs__sell--to {
+    font-size: 16px;
+    width: 445px;
+  }
+  #buy .buy--red__btn button {
+    width: 217px;
+    margin: 0 26px 0 0;
+  }
+  #buy .buy--red__text{
+    margin: 16px 8px;
+  }
+  #buy .buy--more__sale hr{
+    width: 396px;
+  }
+  //#buy .buy--red__text select{
+  //  margin: 16px 8px;
+  //}
   #buy .buy--inputs__sell--cup{
     width: 242px;
   }
@@ -140,10 +198,18 @@
   #buy .buy--inputs__sell{
     flex-wrap: wrap;
   }
+  #buy .buy--more__card--into__flat--img{
+    width: 360px;
+    height: 336px;
+  }
 }
 @media (max-width: 540px) {
-  #buy .buy--inputs__pro--add input{
-    //width: 520px;
+  #buy .buy--more__card{
+    width: 355px;
+  }
+  #buy .buy--more__card--into__flat--img {
+    width: 360px;
+    height: 336px;
   }
   #buy .buy--more__sale hr{
     width: 210px;
@@ -164,10 +230,7 @@
   #buy .buy--more__card--into__flat{
     padding: 0;
   }
-  #buy .buy--more__card--into__flat--img{
-    width: 394px;
-    height: 346px;
-  }
+
   #buy .buy--inputs__sell{
     flex-wrap: wrap;
   }
@@ -183,10 +246,7 @@
   }
   //}
   #buy .buy--red__btn button{
-    //padding: 10px 40px;
-    //margin: 0 20px;
     display: flex;
-
     gap: 14px;
     width: 210px;
     height: 50px;
@@ -197,9 +257,6 @@
     flex-wrap: wrap;
     justify-content: end;
   }
-  //#buy .buy--red__btn{
-  //    display: flex;
-  //    justify-content: space-between;
   #buy .buy--red__btn--name{
     margin: 0 40px;
     padding: 10px 20px;
@@ -232,8 +289,22 @@
   #buy .buy--inputs__sell select{
     padding: 14px 19px;
   }
+  #buy .buy--more__sale{
+    padding: 0 10px;
+  }
+  #buy .buy--more__card--into__flat--img {
+    width: 353px;
+    height: 315px;
+  }
 }
 @media (max-width: 420px) {
+  #buy .buy--more__card{
+    width: 286px;
+  }
+  #buy .buy--more__card--into__flat--img {
+    width: 287px;
+    height: 290px;
+  }
   #buy .buy--inputs__pro--add input{
     width: 335px;
   }
@@ -246,12 +317,15 @@
   #buy .buy--red__btn button{
     width: 160px;
   }
-  #buy .buy--more__card--into__flat--img {
-    width: 346px;
-    height: 316px;
-  }
+  //#buy .buy--more__card--into__flat--img {
+  //  width: 346px;
+  //  height: 316px;
+  //}
 }
 @media (max-width: 360px) {
+  #buy .buy--more__card{
+    width: 260px;
+  }
   #buy .buy--inputs__pro--add input{
     width: 292px;
     font-size: 14px;
@@ -272,9 +346,13 @@
     width: 132px;
     font-size: 13px;
   }
+  //#buy .buy--more__card--into__flat--img {
+  //  width: 285px;
+  //  height: 265px;
+  //}
   #buy .buy--more__card--into__flat--img {
-    width: 285px;
-    height: 265px;
+    width: 261px;
+    height: 245px;
   }
 }
 @media (max-width: 320px) {
@@ -299,5 +377,8 @@
   #buy .buy--more__card--into__flat--img {
     width: 260px;
     height: 250px;
+  }
+  #buy .buy--num__be{
+    margin: 5px 8px;
   }
 }
