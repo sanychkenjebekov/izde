@@ -68,6 +68,9 @@ const Wifi = () => {
 
                         <div className='owner--maps'>
                             <div className='owner--maps__st'>
+                                <div>
+                                    <h4>Location</h4>
+                                </div>
                                 <iframe
                                     title="Google Map"
                                     width="600"

@@ -9,6 +9,7 @@ import {FaBath, FaVectorSquare} from "react-icons/fa";
 import {BiBed, BiHomeAlt2} from "react-icons/bi";
 import Tv from "./tv";
 import Swip from "./swip";
+import "./media.scss"
 
 
 const Dream = () => {
@@ -76,6 +77,7 @@ const Dream = () => {
                                                 <h5>Minimum stay</h5>
                                                 <p>6 month</p>
                                             </div>
+
                                             <div className='dream--texts__stay--second__mini--bi__do'>
                                                 <h5>Deposit</h5>
                                                 <p>20 000 с</p>

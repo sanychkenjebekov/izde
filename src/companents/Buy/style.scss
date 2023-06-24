@@ -130,7 +130,7 @@
       justify-content: start;
       //justify-content: space-between;
       &__card{
-        //width: 640px;
+        width: 625px;
         //height: 248px;
         border: 1px solid rgba(0, 74, 96, 0.5);
         border-radius: 16px;
@@ -281,6 +281,7 @@
     &--photos{
       display: flex;
       //justify-content: space-between;
+
       &__four{
         display: flex;
         flex-wrap: wrap;

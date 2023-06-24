@@ -1,16 +1,16 @@
 import React from 'react';
 import {FiSearch} from "react-icons/fi";
-import "./style.scss"
+import "../style.scss"
 import {AiFillCheckCircle} from "react-icons/ai";
 import {RiMedalFill} from "react-icons/ri";
-import grow from "../../img/grow.png"
+import flat from "../../../img/flat.png"
 import "./media.scss"
-import svg from "../../img/svg.svg"
+import svg from "../../../img/svg.svg"
 import {FaBath, FaVectorSquare} from "react-icons/fa";
 import {BiBed} from "react-icons/bi";
 import {Link} from "react-router-dom";
 
-const Rent = () => {
+const Buy = () => {
     return (
         <div id='buy'>
             <div className="container">
@@ -52,12 +52,36 @@ const Rent = () => {
                             </select>
                         </div>
                     </div>
-                    <Link to={'/rentDetails'}><div className='buy--more'>
+                    <Link to={'/buyDetails'}><div className='buy--more'>
                         <div>
+                            <Link to={`/dream`}>
+                                <div className='buy--more__card'>
+                                    <div className='buy--more__card--into'>
+                                        <div className='buy--more__card--into__flat'>
+                                            <img className='buy--more__card--into__flat--img' src={flat} alt=""/>
+                                        </div>
+                                        <div className='buy--more__card--into__right'>
+                                            <div className='buy--more__card--into__right--one'>
+                                                <h2>Apartment</h2>
+                                                <h3>The Grand Estate</h3>
+                                            </div>
+                                            <div className='buy--more__card--into__right--two'>
+                                                <span> <FaBath/> 1 Bathroom <br/> <BiBed/> 1 Bedroom</span>
+                                                <span> <FaVectorSquare/> Square: 120 m2</span>
+                                            </div>
+
+                                            <div className='buy--more__card--into__right--three'>
+                                                <h4>Bishkek</h4>
+                                                <span>$ 100 000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Link>
                             <div className='buy--more__card'>
                                 <div className='buy--more__card--into'>
                                     <div className='buy--more__card--into__flat'>
-                                        <img className='buy--more__card--into__flat--img' src={grow} alt=""/>
+                                        <img className='buy--more__card--into__flat--img' src={flat} alt=""/>
                                     </div>
                                     <div className='buy--more__card--into__right'>
                                         <div className='buy--more__card--into__right--one'>
@@ -79,7 +103,7 @@ const Rent = () => {
                             <div className='buy--more__card'>
                                 <div className='buy--more__card--into'>
                                     <div className='buy--more__card--into__flat'>
-                                        <img className='buy--more__card--into__flat--img' src={grow} alt=""/>
+                                        <img className='buy--more__card--into__flat--img' src={flat} alt=""/>
                                     </div>
                                     <div className='buy--more__card--into__right'>
                                         <div className='buy--more__card--into__right--one'>
@@ -101,7 +125,7 @@ const Rent = () => {
                             <div className='buy--more__card'>
                                 <div className='buy--more__card--into'>
                                     <div className='buy--more__card--into__flat'>
-                                        <img className='buy--more__card--into__flat--img' src={grow} alt=""/>
+                                        <img className='buy--more__card--into__flat--img' src={flat} alt=""/>
                                     </div>
                                     <div className='buy--more__card--into__right'>
                                         <div className='buy--more__card--into__right--one'>
@@ -123,7 +147,7 @@ const Rent = () => {
                             <div className='buy--more__card'>
                                 <div className='buy--more__card--into'>
                                     <div className='buy--more__card--into__flat'>
-                                        <img className='buy--more__card--into__flat--img' src={grow} alt=""/>
+                                        <img className='buy--more__card--into__flat--img' src={flat} alt=""/>
                                     </div>
                                     <div className='buy--more__card--into__right'>
                                         <div className='buy--more__card--into__right--one'>
@@ -145,7 +169,7 @@ const Rent = () => {
                             <div className='buy--more__card'>
                                 <div className='buy--more__card--into'>
                                     <div className='buy--more__card--into__flat'>
-                                        <img className='buy--more__card--into__flat--img' src={grow} alt=""/>
+                                        <img className='buy--more__card--into__flat--img' src={flat} alt=""/>
                                     </div>
                                     <div className='buy--more__card--into__right'>
                                         <div className='buy--more__card--into__right--one'>
@@ -167,7 +191,7 @@ const Rent = () => {
                             <div className='buy--more__card'>
                                 <div className='buy--more__card--into'>
                                     <div className='buy--more__card--into__flat'>
-                                        <img className='buy--more__card--into__flat--img' src={grow} alt=""/>
+                                        <img className='buy--more__card--into__flat--img' src={flat} alt=""/>
                                     </div>
                                     <div className='buy--more__card--into__right'>
                                         <div className='buy--more__card--into__right--one'>
@@ -189,7 +213,7 @@ const Rent = () => {
                             <div className='buy--more__card'>
                                 <div className='buy--more__card--into'>
                                     <div className='buy--more__card--into__flat'>
-                                        <img className='buy--more__card--into__flat--img' src={grow} alt=""/>
+                                        <img className='buy--more__card--into__flat--img' src={flat} alt=""/>
                                     </div>
                                     <div className='buy--more__card--into__right'>
                                         <div className='buy--more__card--into__right--one'>
@@ -208,42 +232,22 @@ const Rent = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='buy--more__card'>
-                                <div className='buy--more__card--into'>
-                                    <div className='buy--more__card--into__flat'>
-                                        <img className='buy--more__card--into__flat--img' src={grow} alt=""/>
-                                    </div>
-                                    <div className='buy--more__card--into__right'>
-                                        <div className='buy--more__card--into__right--one'>
-                                            <h2>Apartment</h2>
-                                            <h3>The Grand Estate</h3>
-                                        </div>
-                                        <div className='buy--more__card--into__right--two'>
-                                            <span> <FaBath/> 1 Bathroom <br/> <BiBed/> 1 Bedroom</span>
-                                            <span> <FaVectorSquare/> Square: 120 m2</span>
-                                        </div>
 
-                                        <div className='buy--more__card--into__right--three'>
-                                            <h4>Bishkek</h4>
-                                            <span>$ 100 000</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
 
                         </div>
                         <div className='buy--more__sale'>
                             <hr/>
                             <div className='buy--more__sale--nine'>
                                 <h5>Popular Searches</h5>
-                                <a href="#">Properties for sale</a>
-                                <a href="#">Apartments for sale</a>
-                                <a href="#">Villas for sale</a>
-                                <a href="#">Townhouses for sale</a>
-                                <a href="#">Compounds for sale</a>
-                                <a href="#">Duplexes for sale</a>
-                                <a href="#">Land for sale</a>
-                                <a href="#">Hotel Apartments for sale</a>
+                                <a href="src/companents/Buy/buy/index#">Properties for sale</a>
+                                <a href="src/companents/Buy/buy/index#">Apartments for sale</a>
+                                <a href="src/companents/Buy/buy/index#">Villas for sale</a>
+                                <a href="src/companents/Buy/buy/index#">Townhouses for sale</a>
+                                <a href="src/companents/Buy/buy/index#">Compounds for sale</a>
+                                <a href="src/companents/Buy/buy/index#">Duplexes for sale</a>
+                                <a href="src/companents/Buy/buy/index#">Land for sale</a>
+                                <a href="src/companents/Buy/buy/index#">Hotel Apartments for sale</a>
                             </div>
                         </div>
                     </div></Link>
@@ -286,4 +290,4 @@ const Rent = () => {
     );
 };
 
-export default Rent;
+export default Buy;
