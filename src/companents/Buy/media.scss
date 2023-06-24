@@ -5,6 +5,20 @@
   #buy .buy--more__sale hr{
     width: 210px;
   }
+  #dream .dream--photos__four{
+    padding: 0;
+    margin-left: 10px;
+  }
+  #dream .dream--photos__four img{
+    width: 170px;
+    height: 150px;
+  }
+  #dream .dream--texts__text {
+    width: 920px;
+  }
+  #dream .dream--texts__stay p {
+    width: 500px;
+  }
 }
 @media (max-width: 1024px) {
   #buy .buy--inputs__pro--add input{

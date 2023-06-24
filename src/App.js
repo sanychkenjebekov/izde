@@ -13,6 +13,9 @@ import PaidAd from "./companents/PaidAd";
 import Reviews from "./companents/Reviews/reviews"
 import Dream from "./companents/Buy/detailebuy";
 import Favorite from "./companents/Favorite";
+import ChangeProf from "./companents/ChangeProf";
+import AddPhoto from "./companents/AddPhoto";
+import Admin from "./Admin";
 
 
 
@@ -40,6 +43,9 @@ function App() {
         <Route path={'/buyDetails'} element={<Dream/>}/>
         <Route path={'/rentDetails'} element={<Dream/>}/>
         <Route path={'/owner'} element={<Favorite/>}/>
+        <Route path={'/changeProfile'} element={<ChangeProf/>}/>
+        <Route path={'/addDate'} element={<AddPhoto/>}/>
+        <Route path={'/admin'} element={<Admin/>}/>
       </Routes>
       <Footer/>
     </div>
