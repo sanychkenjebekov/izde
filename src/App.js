@@ -15,9 +15,16 @@ import Dream from "./companents/Buy/detailebuy";
 import Favorite from "./companents/Favorite";
 import AddPhoto from "./companents/AddPhoto";
 import AgentsLesile from "./companents/AgentsLesile";
+import Permission from "./companents/AdminPermission";
+
+
+
+
+
 import LoginUser from "./companents/LoginAdmin/loginUser";
 import ForgatPass from "./companents/LoginAdmin/ForgatPass";
 import PassSbros from "./companents/LoginAdmin/PassSbros";
+
 
 function App() {
   const { pathname } = useLocation();
