@@ -15,6 +15,7 @@ import Dream from "./companents/Buy/detailebuy";
 import Favorite from "./companents/Favorite";
 import AddPhoto from "./companents/AddPhoto";
 import AgentsLesile from "./companents/AgentsLesile";
+import Permission from "./companents/AdminPermission";
 
 
 
