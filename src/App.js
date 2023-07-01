@@ -1,58 +1,59 @@
-import './App.scss';
+import "./App.scss";
 import Header from "./companents/Header";
-import {Route, Routes, useLocation} from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Footer from "./companents/Footer";
 import Home from "./companents/Home";
 import Login from "./companents/Login/login";
 import Agents from "./companents/Agents/agents";
 import Buy from "./companents/Buy/buy";
 import Rent from "./companents/Buy/buy/Rent";
-import {useEffect} from "react";
+import { useEffect } from "react";
 import FavoriteSetings from "./companents/FavoritesSetings";
 import PaidAd from "./companents/PaidAd";
-import Reviews from "./companents/Reviews/reviews"
+import Reviews from "./companents/Reviews/reviews";
 import Dream from "./companents/Buy/detailebuy";
 import Favorite from "./companents/Favorite";
 import AddPhoto from "./companents/AddPhoto";
 import AgentsLesile from "./companents/AgentsLesile";
 import Payment from "./Agents/Payment";
 import Reatly from "./Agents/Reatly";
-
-
-
+import Permission from "./companents/AdminPermission";
+import LoginUser from "./companents/LoginAdmin/loginUser";
+import ForgatPass from "./companents/LoginAdmin/ForgatPass";
+import PassSbros from "./companents/LoginAdmin/PassSbros";
 
 
 function App() {
-    const {pathname} = useLocation()
-    useEffect(()=>{
-        window.scroll(0,0)
-    },[pathname])
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, [pathname]);
   return (
     <div className="App">
-        {/*<Reatly/>*/}
-        {/*<Payment/>*/}
-      <Header/>
+      <Header />
       <Routes>
-          <Route path={'/'} element={<Home/>}/>
-          <Route path={'/login'} element={<Login/>}/>
-          <Route path={'/agents'} element={<Agents/>}/>
-          <Route path={'/buy'} element={<Buy/>}/>
-          <Route path={'/rent'} element={<Rent/>}/>
-        <Route path={'/favoriteSetings'} element={<FavoriteSetings/>}/>
-          <Route path={'/dream'} element={<Dream/>}/>
-          <Route path={'/favoriteSetings'} element={<FavoriteSetings/>}/>
-        <Route path={'/addProperty'} element={<PaidAd/>}/>
-        <Route path={'/reviews'} element={<Reviews/>}/>
-        <Route path={'/buyDetails'} element={<Dream/>}/>
-        <Route path={'/rentDetails'} element={<Dream/>}/>
-        <Route path={'/owner'} element={<Favorite/>}/>
-        <Route path={'/addphoto'} element={<AddPhoto/>}/>
-        <Route path={'/becomeagent'} element={<AgentsLesile/>}/>
+        <Route path={"/"} element={<Home />} />
+        <Route path={"/login"} element={<Login />} />
+        <Route path={"/agents"} element={<Agents />} />
+        <Route path={"/buy"} element={<Buy />} />
+        <Route path={"/rent"} element={<Rent />} />
+        <Route path={"/favoriteSetings"} element={<FavoriteSetings />} />
+        <Route path={"/dream"} element={<Dream />} />
+        <Route path={"/favoriteSetings"} element={<FavoriteSetings />} />
+        <Route path={"/addProperty"} element={<PaidAd />} />
+        <Route path={"/reviews"} element={<Reviews />} />
+        <Route path={"/buyDetails"} element={<Dream />} />
+        <Route path={"/rentDetails"} element={<Dream />} />
+        <Route path={"/owner"} element={<Favorite />} />
+        <Route path={"/addphoto"} element={<AddPhoto />} />
+        <Route path={"/becomeagent"} element={<AgentsLesile />} />
+        <Route path="/forgat" element={<ForgatPass />} />
+        <Route path="/LoginAdmin" element={<LoginUser />} />
+        <Route path="/passSbros" element={<PassSbros />} />
           <Route path={'/reatly'} element={<Reatly/>}/>
           <Route path={'/payment'} element={<Payment/>}/>
-
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
