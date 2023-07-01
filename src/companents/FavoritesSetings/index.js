@@ -1,5 +1,6 @@
 import React from 'react';
 import save from '../../img/saved.png'
+import {Link} from "react-router-dom";
 
 const FavoriteSetings = () => {
     return (
@@ -18,8 +19,8 @@ const FavoriteSetings = () => {
                         <p><span>City:</span> Bishkek</p>
                     </div>
                     <div className="favoriteSetings--tel">
-                        <button>Add property</button>
-                        <button>Become agent</button>
+                        <Link to={'/addProperty'}><button>Add property</button></Link>
+                       <Link to={'/becomeagent'}><button>Become agent</button></Link>
                     </div>
                 </div>
                 <div className="saved">

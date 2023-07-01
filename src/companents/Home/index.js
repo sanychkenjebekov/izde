@@ -43,7 +43,7 @@ const Home = () => {
     }
     return (
         <>
-            <div id='home'>
+            <div id='home'>              
                 <div className="container">
                     <div className="home">
                         <h1>Let’s find a perfect <br/> home for you!</h1>

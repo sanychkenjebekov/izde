@@ -1,0 +1,88 @@
+#forgatPass {
+  padding-top: 180px;
+  background-image: url("../../../img/loginAdminbg.png");
+  height: 994px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .forgatPass {
+    max-width: 840px;
+    height: 691px;
+    border-radius: 32px;
+    background: #fff;
+    margin: 0 auto;
+    img {
+      padding: 30px 0 0 39px;
+    }
+    &__block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        padding: 47px 0 0 0;
+        color: #004a60;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.96px;
+        margin-right: 50px;
+      }
+      p {
+        padding: 17px 0 45px 0;
+        color: #004a60;
+        font-size: 20px;
+        max-width: 440px;
+      }
+      &-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 62%;
+        gap: 37px;
+        position: relative;
+        input {
+          border-radius: 11px;
+          border: 1px solid rgba(0, 74, 96, 0.46);
+          width: 100%;
+          padding: 23px 28px;
+          font-size: 24px;
+          color: rgba(0, 74, 96, 0.65);
+          caret-color:rgba(0, 74, 96, 0.65) ;
+          &:-webkit-autofill,
+          &:-webkit-autofill:hover,
+          &:-webkit-autofill:focus,
+          &:-webkit-autofill:active {
+            -webkit-box-shadow: inset 0 0 0 50px #fff !important;
+            -webkit-text-fill-color: rgba(0, 74, 96, 0.65) !important;
+          }
+          &::placeholder {
+            color: rgba(0, 74, 96, 0.65);
+            font-size: 30px;
+          }
+        }
+        .email {
+          position: absolute;
+          top: 80px;
+          color: #f44336;
+        }
+        .forgot {
+          color: #1b76f9;
+          font-size: 24px;
+        }
+        .Continue {
+          margin-top: 25px;
+          border-radius: 11px;
+          width: 100%;
+          padding: 29px 28px;
+          background: #1b76f9;
+          color: #fff;
+          font-size: 32px;
+          font-weight: 500;
+          text-align: center;
+          transition: 0.2s;
+          &:hover {
+            background: #0762e5;
+          }
+        }
+      }
+    }
+  }
+}

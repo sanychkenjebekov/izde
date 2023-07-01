@@ -7,8 +7,8 @@ import {GlobalContext} from "../../context";
 
 
 const Header = () => {
-    const {users} = useContext(GlobalContext)
-    const {profil} = useContext(GlobalContext)
+    const {users,burgerUser,setBurgerUser} = useContext(GlobalContext)
+    const {profil,setProfil,burgerProfil,setBurgerProfil} = useContext(GlobalContext)
 
     const burger = (e)=>{
         const b = document.querySelector('.header--burgerAll__burger--1')
@@ -51,17 +51,25 @@ const Header = () => {
     useEffect(()=>{
         const hUser = document.querySelector('.headerUser')
         const hLogin = document.querySelector('.headerLogin')
+        const bLogin = document.querySelector('.burgerLogin')
+        const bUser = document.querySelector('.burgerUser')
         if(users === true){
+           setProfil(false)
+            setBurgerProfil(false)
             hUser.style.display = 'block'
+            bUser.style.display = 'block'
         }else {
             hUser.style.display = 'none'
+            bUser.style.display = 'none'
         }
         if(profil === true){
             hLogin.style.display = 'block'
+            bLogin.style.display = 'block'
         }else {
             hLogin.style.display = 'none'
+            bLogin.style.display = 'none'
         }
-    },[])
+    },[users,profil,burgerUser,burgerProfil])
     return (
         <div id='header'>
             <div className="container">
@@ -82,7 +90,7 @@ const Header = () => {
                             <option>Русский</option>
                         </select>
                         <Link onClick={removeBurger} to={'/login'}><button className='headerLogin'>Log in</button></Link>
-                        <img className='headerUser' src={user} alt=""/>
+                        <Link to={'/favoriteSetings'}><img className='headerUser' src={user} alt=""/></Link>
                     </div>
                     <div onClick={burger} className="header--burgerAll">
                         <div className="header--burgerAll__burger">
@@ -108,7 +116,7 @@ const Header = () => {
                         <option>Русский</option>
                     </select>
                     <Link onClick={removeBurger} to={'/login'}><button className='burgerLogin'>Log in</button></Link>
-                    <img className='burgerUser' src={user} alt=""/>
+                    <Link to={'/favoriteSetings'}><img className='burgerUser' src={user} alt=""/></Link>
                 </div>
             </div>
             <div className="bg"></div>
