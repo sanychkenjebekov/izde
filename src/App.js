@@ -18,6 +18,7 @@ import AgentsLesile from "./companents/AgentsLesile";
 import LoginUser from "./companents/LoginAdmin/loginUser";
 import ForgatPass from "./companents/LoginAdmin/ForgatPass";
 import PassSbros from "./companents/LoginAdmin/PassSbros";
+import Registration from "./companents/Registration";
 
 function App() {
   const { pathname } = useLocation();
@@ -46,6 +47,7 @@ function App() {
         <Route path="/forgat" element={<ForgatPass />} />
         <Route path="/LoginAdmin" element={<LoginUser />} />
         <Route path="/passSbros" element={<PassSbros />} />
+        <Route path="/registration" element={<Registration />} />
       </Routes>
       <Footer />
     </div>

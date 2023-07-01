@@ -15,7 +15,7 @@ const RootContext = ({children}) => {
 
         if (storedLoggedIn === "true" && storedUser) {
             setIsLoggedIn(true);
-            setUsers(JSON.parse(storedUser));
+            // setUsers(JSON.parse(storedUser));
         }
     }, []);
 
