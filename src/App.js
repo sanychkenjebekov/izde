@@ -12,7 +12,6 @@ import Rent from "./companents/Buy/buy/Rent";
 import { useEffect } from "react";
 import FavoriteSetings from "./companents/FavoritesSetings";
 import PaidAd from "./companents/PaidAd";
-import Reviews from "./companents/Reviews/reviews";
 import Dream from "./companents/Buy/detailebuy";
 import Favorite from "./companents/Favorite";
 import AddPhoto from "./companents/AddPhoto";
