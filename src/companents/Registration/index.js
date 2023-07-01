@@ -1,16 +1,19 @@
-import "./login.scss";
-import "./media.scss";
+import "./index.scss";
+import './media.scss';
 import React, { useContext, useEffect, useState } from "react";
 import logoLogin from "../../img/LogoLogin.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { GlobalContext } from "../../context";
+import { TiTick } from "react-icons/ti";
 
 const Login = () => {
   const { setProfil, login } = useContext(GlobalContext);
   const { setUsers } = useContext(GlobalContext);
   const [email, setEmail] = useState("");
+  const [modal, setModal] = useState(false)
+  const nav = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [password, setPassword] = useState("");
   const [emailDirty, setEmailDirty] = useState(false);
@@ -32,6 +35,7 @@ const Login = () => {
       login();
     }
   });
+
 
   // useEffect(() => {
   //     setFormValid(emailError === "" && passwordError === "");
@@ -79,7 +83,20 @@ const Login = () => {
   const userBlock = () => {
     setUsers(true);
     setProfil(false);
+    if(modal === false){
+      setModal(true)
+      window.setTimeout(()=>{
+        setModal(false)
+         nav("/login");
+      },3000)
+    }
   };
+  // const modalClick = () => {
+  //   window.setTimeout(() => {
+  //     setModal(!modal);
+  //   }, 5000);
+  //   //
+  // }
   return (
     <div id="login">
       <div className="container">
@@ -89,8 +106,8 @@ const Login = () => {
             <h1>WELCOME TO IZDE.KG</h1>
           </div>
           <div className="login__block">
-            <form className="login__block--price">
-              {/* <h1>Log in</h1> */}
+            <div className="login__block--price">
+              <h1>Registration</h1>
               <div className="login__block--price__form">
                 <input
                   type="text"
@@ -129,27 +146,58 @@ const Login = () => {
                   <div className="password">{passwordError}</div>
                 )}
               </div>
-              <p>
-                We’ll call or text you to confirm your number. Standard message
-                and data rates apply.
-              </p>
               <Link to="/forgat">Forgot your password?</Link>
-              <Link to="/registration">Don’t have an account? Register</Link>
-              <Link to="/favoriteSetings">
-                <button onClick={userBlock} disabled={!formValid} type="submit">
-                  Continue
-                </button>
-              </Link>
+
+              <button onClick={userBlock} disabled={!formValid}>
+                Continue
+              </button>
+              <div
+                style={{
+                  display: modal ? 'flex' : "none",
+                  // display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  position: "absolute",
+                  left: "37%",
+                  top: "50%",
+                  width: "500px",
+                  height: "200px",
+                  background: "#004A60",
+                  zIndex: 1,
+                  fontSize: "18px",
+                  color: "#fff",
+                  textAlign: 'center',
+                  borderRadius: '10px',
+                }}
+              >
+                Вы успешно зарегистрировалиль! <br/>
+                <TiTick style={{
+                  width: '30px',
+                  height: '30px'
+                }}/>
+              </div>
               <Link>
                 <button className="btnGoogle">
                   <FcGoogle className="icon" />
                   Continue with Google
                 </button>
               </Link>
-            </form>
+            </div>
           </div>
         </div>
       </div>
+      <div
+        style={{
+          display: modal ? modal : "none",
+          position: "absolute",
+          top: 0,
+          backdropFilter: "blur(15px)",
+          background: "#004a60",
+          width: "100%",
+          height: "125%",
+          opacity: 0.5,
+        }}
+      ></div>
     </div>
   );
 };
