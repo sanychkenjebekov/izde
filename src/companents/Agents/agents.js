@@ -4,7 +4,6 @@ import './agents.scss'
 import './media.scss'
 import card from '../../img/card.jpg'
 import { Link } from "react-router-dom";
-// import larg from '../../img/larg.svg'
 import { MdStars } from 'react-icons/md';
 
 const Agents = () => {
