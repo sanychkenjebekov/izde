@@ -1,0 +1,194 @@
+#payment{
+  font-family: Poppins,sans-serif;
+  .payment{
+    display: flex;
+    .left{
+      width: 188px;
+    }
+    &--all{
+      padding: 30px 0;
+    }
+    &--second{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__profile{
+        display: flex;
+        padding: 25px 0;
+        &--die{
+          padding: 0 10px;
+          h1{
+            color: #004A60;
+            font-size: 20px;
+            font-family: Poppins, sans-serif;
+            font-weight: 500;
+          }
+          p{
+            color: rgba(0, 74, 96, 0.80);
+            font-size: 10px;
+            font-family: Poppins,sans-serif;
+          }
+        }
+      }
+      &__ment{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        &--btn{
+           font-family: Poppins,sans-serif;
+           color: #004A60;
+           font-size: 17px;
+           //padding: 8px 0;
+           padding: 10px;
+           background: #f6f1f1;
+           border-radius: 10px;
+           cursor: pointer;
+          margin: 5px 0;
+
+        }
+        &--tv{
+          color: #FBFEFF;
+          font-size: 17px;
+          padding: 10px;
+          background: #1B76F9;
+          border-radius: 10px;
+        }
+      }
+    }
+    &--set{
+      padding: 80% 0;
+      h3{
+        color: #004A60;
+        font-size: 17px;
+      }
+      h4{
+        color: #F91B1B;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+    }
+
+    &--right{
+      //display: flex;
+      padding: 6% 0;
+      &__search{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -4%;
+        margin-bottom: 6%;
+        &--two{
+          position: relative;
+          width: 815px;
+          input{
+            font-size: 12px;
+            color: #79B0FF;
+            width: 320px;
+            //width: 818px;
+            height: 26px;
+            //border: 1px solid #5696f3;
+            border: none;
+            background: #e9ecf8;
+            padding-left: 20px;
+            border-radius: 10px;
+          }
+          svg{
+            position: absolute;
+            left: 5px;
+            top: 8px;
+            //right: 0;
+            font-size: 12px;
+          }
+        }
+        select{
+          font-size: 16px;
+          color: #1B76F9;
+          border: none;
+          font-weight: 400;
+          option{
+            font-size: 16px;
+            color: #1B76F9;
+            font-weight: 400;
+            border: none;
+          }
+        }
+      }
+      &__sms{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 19px 0;
+        //width: 800px;
+        h5{
+          color: #000;
+          font-size: 14px;
+          line-height: 140%;
+          padding: 0 10px;
+        }
+        span{
+          color: #165E3D;
+          font-size: 12px;
+          line-height: 16px;
+        }
+        h6{
+          color: #353535;
+          font-size: 15px;
+          padding: 0 20px;
+          //line-height: 140%;
+          span{
+            color: #B9B9B9;
+            font-size: 14px;
+          }
+        }
+        h7{
+          padding: 0 10px;
+          color: rgba(168, 140, 3, 0.82);
+          font-size: 12px;
+          line-height: 16px;
+        }
+        h3{
+          color: #F91B1B;
+          font-size: 12px;
+          line-height: 16px;
+        }
+        h2{
+          color: #005cdf;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+      &__pane{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 0;
+        h1{
+          color: #000;
+          font-size: 14px;
+          line-height: 140%;
+        }
+        h2{
+          font-weight: 300;
+          color: #484646;
+          font-size: 14px;
+        }
+        &--june{
+          display: flex;
+          flex-direction: column;
+          h3{
+            color: rgba(61, 60, 60, 0.85);
+            font-size: 14px;
+            line-height: 140%;
+          }
+          p{
+            color: #B9B9B9;
+            font-size: 14px;
+          }
+        }
+      }
+      hr{
+        //width: 500px;
+      }
+    }
+  }
+}

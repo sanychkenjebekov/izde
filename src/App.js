@@ -15,6 +15,8 @@ import Dream from "./companents/Buy/detailebuy";
 import Favorite from "./companents/Favorite";
 import AddPhoto from "./companents/AddPhoto";
 import AgentsLesile from "./companents/AgentsLesile";
+import Payment from "./Agents/Payment";
+import Reatly from "./Agents/Reatly";
 
 
 
@@ -27,6 +29,8 @@ function App() {
     },[pathname])
   return (
     <div className="App">
+        {/*<Reatly/>*/}
+        {/*<Payment/>*/}
       <Header/>
       <Routes>
           <Route path={'/'} element={<Home/>}/>
@@ -44,6 +48,9 @@ function App() {
         <Route path={'/owner'} element={<Favorite/>}/>
         <Route path={'/addphoto'} element={<AddPhoto/>}/>
         <Route path={'/becomeagent'} element={<AgentsLesile/>}/>
+          <Route path={'/reatly'} element={<Reatly/>}/>
+          <Route path={'/payment'} element={<Payment/>}/>
+
       </Routes>
       <Footer/>
     </div>
