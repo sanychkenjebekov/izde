@@ -15,10 +15,14 @@ import Dream from "./companents/Buy/detailebuy";
 import Favorite from "./companents/Favorite";
 import AddPhoto from "./companents/AddPhoto";
 import AgentsLesile from "./companents/AgentsLesile";
+import Payment from "./Agents/Payment";
+import Reatly from "./Agents/Reatly";
+import Permission from "./companents/AdminPermission";
 import LoginUser from "./companents/LoginAdmin/loginUser";
 import ForgatPass from "./companents/LoginAdmin/ForgatPass";
 import PassSbros from "./companents/LoginAdmin/PassSbros";
 import Registration from "./companents/Registration";
+
 
 function App() {
   const { pathname } = useLocation();
@@ -48,6 +52,8 @@ function App() {
         <Route path="/LoginAdmin" element={<LoginUser />} />
         <Route path="/passSbros" element={<PassSbros />} />
         <Route path="/registration" element={<Registration />} />
+          <Route path={'/reatly'} element={<Reatly/>}/>
+          <Route path={'/payment'} element={<Payment/>}/>
       </Routes>
       <Footer />
     </div>
