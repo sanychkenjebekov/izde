@@ -23,6 +23,7 @@ import LoginUser from "./companents/LoginAdmin/loginUser";
 import ForgatPass from "./companents/LoginAdmin/ForgatPass";
 import PassSbros from "./companents/LoginAdmin/PassSbros";
 import Registration from "./companents/Registration";
+import LoginAd from "./companents/Loginad/login";
 
 
 function App() {
