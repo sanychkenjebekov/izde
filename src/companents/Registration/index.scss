@@ -53,6 +53,8 @@
         &__form {
           position: relative;
           display: flex;
+          flex-direction: column;
+          gap: 30px;
           margin: 0 auto;
           input {
             width: 524px;
@@ -83,14 +85,19 @@
             top: 46px;
             color: #f44336;
           }
-          .password {
+          .password1 {
             position: absolute;
-            top: 46px;
+            top: 125px;
             color: #f44336;
           }
-          .iconsGlaza {
+          .password2 {
             position: absolute;
-            top: 16px;
+            top: 200px;
+            color: #f44336;
+          }
+          .iconsGlaza1 {
+            position: absolute;
+            top: 92px;
             left: 505px;
           }
         }

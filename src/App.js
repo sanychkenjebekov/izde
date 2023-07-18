@@ -35,7 +35,7 @@ function App() {
       <Header />
       <Routes>
         <Route path={"/"} element={<Home />} />
-        <Route path={"/login"} element={<Login />} />
+        <Route path={"/oauth/login"} element={<Login />} />
         <Route path={"/agents"} element={<Agents />} />
         <Route path={"/buy"} element={<Buy />} />
         <Route path={"/rent"} element={<Rent />} />
@@ -52,9 +52,9 @@ function App() {
         <Route path="/forgat" element={<ForgatPass />} />
         <Route path="/LoginAdmin" element={<LoginUser />} />
         <Route path="/passSbros" element={<PassSbros />} />
-        <Route path="/registration" element={<Registration />} />
-          <Route path={'/reatly'} element={<Reatly/>}/>
-          <Route path={'/payment'} element={<Payment/>}/>
+        <Route path="/oauth/register" element={<Registration />} />
+        <Route path={"/reatly"} element={<Reatly />} />
+        <Route path={"/payment"} element={<Payment />} />
       </Routes>
       <Footer />
     </div>
