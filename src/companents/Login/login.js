@@ -1,11 +1,12 @@
-import "./login.scss";
-import "./media.scss";
 import React, { useContext, useEffect, useState } from "react";
-import logoLogin from "../../img/LogoLogin.svg";
 import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { GlobalContext } from "../../context";
+import axios from "axios";
+import logoLogin from "../../img/LogoLogin.svg";
+import "./login.scss";
+import "./media.scss";
 
 const Login = () => {
   const { setProfil, login } = useContext(GlobalContext);
@@ -15,7 +16,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [emailDirty, setEmailDirty] = useState(false);
   const [passwordDirty, setPasswordDirty] = useState(false);
-  const [emailError, setEmailError] = useState("email не может быть пустым");
+  const [emailError, setEmailError] = useState("Email не может быть пустым");
   const [passwordError, setPasswordError] = useState(
     "Пароль не может быть пустым"
   );
@@ -24,18 +25,14 @@ const Login = () => {
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
+
   useEffect(() => {
     if (emailError || passwordError) {
       setFormValid(false);
     } else {
       setFormValid(true);
-      login();
     }
-  });
-
-  // useEffect(() => {
-  //     setFormValid(emailError === "" && passwordError === "");
-  // }, [emailError, passwordError]);
+  }, [emailError, passwordError]);
 
   const emailHandler = (e) => {
     setEmail(e.target.value);
@@ -46,14 +43,6 @@ const Login = () => {
       setEmailError("");
     }
   };
-
-  useEffect(() => {
-    localStorage.setItem("email", email);
-  }, [email]);
-
-  useEffect(() => {
-    localStorage.setItem("password", password);
-  }, [password]);
 
   const passwordHandler = (e) => {
     setPassword(e.target.value);
@@ -76,10 +65,29 @@ const Login = () => {
         break;
     }
   };
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    axios
+      .post("http://16.170.206.113:8000/oauth/login/", {
+        email: email,
+        password: password,
+      })
+      .then((response) => {
+        alert("User logged in successfully:", response.data);
+        login();
+      })
+      .catch((error) => {
+        alert("Login error:", error.data);
+      });
+  };
+
   const userBlock = () => {
     setUsers(true);
     setProfil(false);
   };
+
   return (
     <div id="login">
       <div className="container">
@@ -89,8 +97,7 @@ const Login = () => {
             <h1>WELCOME TO IZDE.KG</h1>
           </div>
           <div className="login__block">
-            <form className="login__block--price">
-              {/* <h1>Log in</h1> */}
+            <form className="login__block--price" onSubmit={handleLogin}>
               <div className="login__block--price__form">
                 <input
                   type="text"
@@ -134,12 +141,10 @@ const Login = () => {
                 and data rates apply.
               </p>
               <Link to="/forgat">Forgot your password?</Link>
-              <Link to="/registration">Don’t have an account? Register</Link>
-              <Link to="/favoriteSetings">
-                <button onClick={userBlock} disabled={!formValid} type="submit">
-                  Continue
-                </button>
-              </Link>
+              <Link to="/oauth/register">Don’t have an account? Register</Link>
+              <button onClick={userBlock} disabled={!formValid} type="submit">
+                Continue
+              </button>
               <Link>
                 <button className="btnGoogle">
                   <FcGoogle className="icon" />

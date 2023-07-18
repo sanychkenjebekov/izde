@@ -57,8 +57,6 @@ const Agents = () => {
                   <span>SUPERAGENT</span>
                 </button>
               </Link>
-
-
             </div>
             <div className="hero__card">
               <img src={card} alt="" />

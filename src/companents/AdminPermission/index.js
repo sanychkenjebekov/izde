@@ -123,7 +123,7 @@ const dis=()=>{
                             <div className="permission--main__detail--nbr">
                                 <div className="permission--main__detail--nbr__name">
                                     <h1>Eleanor Pane</h1>
-                                    <p> mail@iconscout.com> </p>
+                                    <p> mail@iconscout.com </p>
                                 </div>
                                 <div className="permission--main__detail--nbr__bRent">
                                     <button className='permission--main__detail--nbr__bRent--btn1' onClick={buy}>Buy</button>
