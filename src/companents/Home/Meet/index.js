@@ -71,7 +71,7 @@ const Meet = () => {
                     <div className="meet--list">
                         <h2>List your property with us</h2>
                         <p>Grow your business with property finder</p>
-                        <Link to={'/login'}><button>Get Started</button></Link>
+                        <Link to={'/oauth/register'}><button>Get Started</button></Link>
                     </div>
                 </div>
             </div>

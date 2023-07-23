@@ -42,12 +42,17 @@
         align-items: center;
         justify-content: center;
         margin-right: 443px;
-
-        &--image {
+        &--i{
           padding: 40px;
-          width: 135px;
-          height: 220px;
-          border-radius: 2px;
+        }
+        &--image {
+          //padding: 40px;
+          //width: 135px;
+          //height: 220px;
+          //border-radius: 2px;
+          width: 144.396px;
+          height: 144.396px;
+          border-radius:50%;
         }
 
         .divs {

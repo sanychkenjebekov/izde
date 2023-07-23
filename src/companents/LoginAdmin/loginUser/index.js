@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import logo from "../../../img/LogoLoginAdmin.svg";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 function LoginUser() {
@@ -11,6 +11,7 @@ function LoginUser() {
   const [showPassword, setShowPassword] = useState(false);
   const [password, setPassword] = useState("");
   const [passwordDirty, setPasswordDirty] = useState(false);
+  const navigate = useNavigate()
   const [passwordError, setPasswordError] = useState(
     "Пароль не может быть пустым"
   );
@@ -54,6 +55,14 @@ function LoginUser() {
        break;
    }
  };
+ const adminTrue =()=>{
+   if(email === 'admin@gmail.com' && password === 'admin'){
+     navigate('/payment')
+   }else {
+     alert('Не правильный логин или пароль !')
+   }
+
+ }
   return (
     <div id="loginUser">
       <div className="container">
@@ -99,7 +108,7 @@ function LoginUser() {
               <Link to={"/forgat"} className="forgot">
                 Forgot your password?
               </Link>
-              <Link className="login">Log in</Link>
+             <h3 style={{cursor:'pointer'}} className='login' onClick={adminTrue}>Log in</h3>
             </form>
           </div>
         </div>

@@ -1,13 +1,14 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import axios from "axios";
 import logoLogin from "../../img/LogoLogin.svg";
-import "./login.scss";
+import "./loginad.scss";
 import "./media.scss";
 
 const LoginAd = () => {
+  const nav = useNavigate()
   const [email, setEmail] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [password, setPassword] = useState("");
@@ -72,7 +73,7 @@ const LoginAd = () => {
         password: password,
       })
       .then((response) => {
-        alert("User logged in successfully:", response.data);
+        nav('/payment')
       })
       .catch((error) => {
         alert("Login error:", error.data);
@@ -80,7 +81,7 @@ const LoginAd = () => {
   };
 
   return (
-    <div id="login">
+    <div id="loginad">
       <div className="container">
         <div className="login">
           <div className="login__logo">
@@ -132,16 +133,16 @@ const LoginAd = () => {
                 and data rates apply.
               </p>
               <Link to="/forgat">Forgot your password?</Link>
-              <Link to="/oauth/register">Don’t have an account? Register</Link>
+              {/*<Link to="/oauth/register">Don’t have an account? Register</Link>*/}
               <button  disabled={!formValid} type="submit">
                 Continue
               </button>
-              <Link>
-                <button className="btnGoogle">
-                  <FcGoogle className="icon" />
-                  Continue with Google
-                </button>
-              </Link>
+              {/*<Link>*/}
+              {/*  <button className="btnGoogle">*/}
+              {/*    <FcGoogle className="icon" />*/}
+              {/*    Continue with Google*/}
+              {/*  </button>*/}
+              {/*</Link>*/}
             </form>
           </div>
         </div>
