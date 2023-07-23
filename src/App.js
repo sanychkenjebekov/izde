@@ -6,7 +6,6 @@ import Home from "./companents/Home";
 import Login from "./companents/Login/login";
 import Agents from "./companents/Agents/agents";
 import Reviews from "./companents/Reviews/reviews"
-import Profile from "./companents/Profile";
 import Buy from "./companents/Buy/buy";
 import Rent from "./companents/Buy/buy/Rent";
 import { useEffect } from "react";
@@ -18,12 +17,13 @@ import AddPhoto from "./companents/AddPhoto";
 import AgentsLesile from "./companents/AgentsLesile";
 import Payment from "./Agents/Payment";
 import Reatly from "./Agents/Reatly";
-import Permission from "./companents/AdminPermission";
 import LoginUser from "./companents/LoginAdmin/loginUser";
 import ForgatPass from "./companents/LoginAdmin/ForgatPass";
 import PassSbros from "./companents/LoginAdmin/PassSbros";
 import Registration from "./companents/Registration";
-import LoginAd from "./companents/Loginad/login";
+import Admin from "./companents/Admin";
+import ChangeProf from "./companents/ChangeProf";
+import Profile from "./companents/Profile";
 
 
 function App() {
@@ -56,6 +56,9 @@ function App() {
         <Route path="/oauth/register" element={<Registration />} />
         <Route path={"/reatly"} element={<Reatly />} />
         <Route path={"/payment"} element={<Payment />} />
+        <Route path={"/admin"} element={<Admin />} />
+        <Route path={"/change-profil"} element={<ChangeProf/>} />
+        <Route path={"/change-profil/profil-setings"} element={<Profile/>} />
       </Routes>
       <Footer />
     </div>

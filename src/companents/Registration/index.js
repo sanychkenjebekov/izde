@@ -10,7 +10,7 @@ import "./index.scss";
 import "./media.scss";
 
 const Login = () => {
-  const { setProfil, login, setUsers } = useContext(GlobalContext);
+  const { setProfil, setUsers } = useContext(GlobalContext);
   const nav = useNavigate();
   const [email, setEmail] = useState("");
   const [modal, setModal] = useState(false);
@@ -116,7 +116,6 @@ const Login = () => {
       setFormValid(false);
     } else {
       setFormValid(true);
-      login();
     }
   }, [emailError, passwordError, confirmPasswordError]);
 
@@ -193,7 +192,7 @@ const Login = () => {
                   <div className="password2">{confirmPasswordError}</div>
                 )}
               </div>
-              <Link to="/forgot">Forgot your password?</Link>
+              <Link to="/forgat">Forgot your password?</Link>
 
               <button onClick={formPost} disabled={!formValid}>
                 Continue

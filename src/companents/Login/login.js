@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { GlobalContext } from "../../context";
@@ -9,14 +9,14 @@ import "./login.scss";
 import "./media.scss";
 
 const Login = () => {
-  const { setProfil, login } = useContext(GlobalContext);
-  const { setUsers } = useContext(GlobalContext);
+  const { setProfil,setUsers } = useContext(GlobalContext);
   const [email, setEmail] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [password, setPassword] = useState("");
   const [emailDirty, setEmailDirty] = useState(false);
   const [passwordDirty, setPasswordDirty] = useState(false);
   const [emailError, setEmailError] = useState("Email не может быть пустым");
+  const nav = useNavigate()
   const [passwordError, setPasswordError] = useState(
     "Пароль не может быть пустым"
   );
@@ -75,17 +75,13 @@ const Login = () => {
         password: password,
       })
       .then((response) => {
-        alert("User logged in successfully:", response.data);
-        login();
+        nav('/favoriteSetings')
+        setProfil(false);
+        setUsers(true);
       })
       .catch((error) => {
         alert("Login error:", error.data);
       });
-  };
-
-  const userBlock = () => {
-    setUsers(true);
-    setProfil(false);
   };
 
   return (
@@ -142,7 +138,7 @@ const Login = () => {
               </p>
               <Link to="/forgat">Forgot your password?</Link>
               <Link to="/oauth/register">Don’t have an account? Register</Link>
-              <button onClick={userBlock} disabled={!formValid} type="submit">
+              <button disabled={!formValid} type="submit">
                 Continue
               </button>
               <Link>

@@ -8,7 +8,7 @@ import {GlobalContext} from "../../context";
 
 const Header = () => {
     const {users,burgerUser,setBurgerUser} = useContext(GlobalContext)
-    const {profil,setProfil,burgerProfil,setBurgerProfil} = useContext(GlobalContext)
+    const {profil,setProfil,burgerProfil,setBurgerProfil,setUsers} = useContext(GlobalContext)
 
     const burger = (e)=>{
         const b = document.querySelector('.header--burgerAll__burger--1')
@@ -63,6 +63,8 @@ const Header = () => {
             bUser.style.display = 'none'
         }
         if(profil === true){
+            setUsers(false)
+            setBurgerUser(false)
             hLogin.style.display = 'block'
             bLogin.style.display = 'block'
         }else {

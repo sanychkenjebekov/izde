@@ -20,7 +20,7 @@ const FavoriteSetings = () => {
                     </div>
                     <div className="favoriteSetings--tel">
                         <Link to={'/addProperty'}><button>Add property</button></Link>
-                       <Link to={'/becomeagent'}><button>Become agent</button></Link>
+                       <Link to={'/change-profil'}><button>Become agent</button></Link>
                     </div>
                 </div>
                 <div className="saved">
