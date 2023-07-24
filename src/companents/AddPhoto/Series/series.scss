@@ -32,6 +32,10 @@
               height: 40px;
               border: 1px solid #AFC6CD;
               border-radius: 8px;
+              &:hover{
+                background: #1b76f9;
+                color: #FFFFFF;
+              }
             }
             button:last-child{
               width: 161px;
@@ -53,7 +57,10 @@
               height: 40px;
               border: 1px solid #AFC6CD;
               border-radius: 8px;
-
+              &:hover{
+                background: #1b76f9;
+                color: #FFFFFF;
+              }
             }
           }
         }
@@ -71,6 +78,10 @@
               height: 40px;
               border: 1px solid #AFC6CD;
               border-radius: 8px;
+              &:hover{
+                background: #1b76f9;
+                color: #FFFFFF;
+              }
             }
           }
         }
@@ -88,6 +99,10 @@
               height: 40px;
               border: 1px solid #AFC6CD;
               border-radius: 8px;
+              &:hover{
+                background: #1b76f9;
+                color: #FFFFFF;
+              }
             }
           }
         }
@@ -125,7 +140,8 @@
             gap: 5px;
             margin: 5px 0 20px 0;
             input{
-              width: 95px;
+              width: 90px;
+              padding: 0 0 0 5px;
               height: 40px;
               background: rgba(0, 74, 96, 0.1);
               border-radius: 8px;
@@ -139,7 +155,8 @@
           &__btn{
             margin: 5px 0 20px 0;
             input{
-              width: 251px;
+              width: 246px;
+              padding: 0 0 0 5px;
               height: 40px;
               background: rgba(0, 74, 96, 0.1);
               border-radius: 8px;
@@ -151,8 +168,9 @@
           &__btn{
             margin: 5px 0 20px 0;
             textarea{
-              width: 662px;
-              height: 88px;
+              width: 657px;
+              padding: 5px 0 0 5px;
+              height: 83px;
               background: rgba(0, 74, 96, 0.1);
               border-radius: 8px;
               border: none;
