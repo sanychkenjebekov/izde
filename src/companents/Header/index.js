@@ -138,7 +138,7 @@ const Header = () => {
               <option>English</option>
               <option>Русский</option>
             </select>
-            <Link onClick={removeBurger} to={"/login"}>
+            <Link onClick={removeBurger} to={"/oauth/login"}>
               <button className="burgerLogin">Log in</button>
             </Link>
             <Link to={"/favoriteSetings"}>

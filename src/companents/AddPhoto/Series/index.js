@@ -10,6 +10,17 @@ import {FaSwimmingPool} from "react-icons/fa";
 import {CgGym} from "react-icons/cg";
 
 const Series = () => {
+    const clickBlue =(e)=>{
+        if(!e.target.classList.contains('active')){
+            e.target.classList.add('active')
+            e.target.style.background = '#1b76f9'
+            e.target.style.color = '#fff'
+        }else {
+            e.target.classList.remove('active')
+            e.target.style.background = 'none'
+            e.target.style.color = 'rgba(0, 74, 96, 0.7)'
+        }
+    }
     return (
         <div id='series'>
             <div className="container">
@@ -19,38 +30,38 @@ const Series = () => {
                             <div className="series--main__right--elit">
                                 <h3>Series</h3>
                                 <div className="series--main__right--elit__btn">
-                                    <button>Elite</button>
-                                    <button>105</button>
-                                    <button>106</button>
-                                    <button>104</button>
-                                    <button>Individual project</button>
+                                    <button className='b1' onClick={clickBlue}>Elite</button>
+                                    <button className='b2' onClick={clickBlue}>105</button>
+                                    <button className='b3' onClick={clickBlue}>106</button>
+                                    <button className='b4' onClick={clickBlue}>104</button>
+                                    <button className='b5' onClick={clickBlue}>Individual project</button>
                                 </div>
                             </div>
                             <div className="series--main__right--number">
                                 <h3>Number of room</h3>
                                 <div className="series--main__right--number__btn">
-                                    <button>1</button>
-                                    <button>2</button>
-                                    <button>3</button>
-                                    <button>4</button>
-                                    <button>5</button>
-                                    <button>6+</button>
+                                    <button onClick={clickBlue} className='b6'>1</button>
+                                    <button onClick={clickBlue} className='b7'>2</button>
+                                    <button onClick={clickBlue} className='b8'>3</button>
+                                    <button onClick={clickBlue} className='b9'>4</button>
+                                    <button onClick={clickBlue} className='b10'>5</button>
+                                    <button onClick={clickBlue} className='b11'>6+</button>
                                 </div>
 
                             </div>
                             <div className="series--main__right--bathroom">
                                 <h3>Bathroom</h3>
                                 <div className="series--main__right--bathroom__btn">
-                                    <button>Combined</button>
-                                    <button>Separate</button>
+                                    <button onClick={clickBlue} className='b12'>Combined</button>
+                                    <button onClick={clickBlue} className='b13'>Separate</button>
                                 </div>
                             </div>
                             <div className="series--main__right--parking">
                                 <h3>Type of parking</h3>
                                 <div className="series--main__right--parking__btn">
-                                    <button>Ground</button>
-                                    <button>Underground</button>
-                                    <button>No</button>
+                                    <button onClick={clickBlue} className='b14'>Ground</button>
+                                    <button onClick={clickBlue} className='b15'>Underground</button>
+                                    <button onClick={clickBlue} className='b16'>No</button>
                                 </div>
                             </div>
                             <div className="series--main__right--location">
